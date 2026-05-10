@@ -1,4 +1,4 @@
-import PanelAdvisor from './PanelAdvisor'
+import PanelAdvisor from './PanelAdvisor.jsx'
 
 export default function App() {
   return (
