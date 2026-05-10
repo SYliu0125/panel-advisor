@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/panel-advisor/sw.js', { scope: '/panel-advisor/' })})}
