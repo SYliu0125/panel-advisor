@@ -14079,5 +14079,686 @@ export const DIAGNOSES = [
         "notes": "Rare entity. BRAF V600E rarely reported. The diagnosis is based on location, morphology (papillary architecture, psammoma bodies), and IHC profile. Indolent behaviour — local excision usually curative."
       }
     ]
+  },
+
+  // ── Soft tissue — additional WHO 5th edition entities ─────────────────────
+  {
+    "id": "sarcoma-infantile-fibrosarcoma",
+    "name": "Infantile Fibrosarcoma (Congenital Fibrosarcoma)",
+    "category": "Sarcoma",
+    "markers": [
+      {
+        "marker": "Pan-TRK (IHC)",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "high",
+        "notes": "Cytoplasmic staining with pan-TRK antibody (clone EPR17341) is a reliable surrogate for ETV6::NTRK3 fusion. Positive IHC mandates confirmatory FISH or RNA sequencing. Negative pan-TRK does not exclude the diagnosis — test for NTRK3 by other methods if clinical suspicion is high."
+      },
+      {
+        "marker": "Vimentin",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Diffusely positive — non-specific mesenchymal marker."
+      },
+      {
+        "marker": "SMA",
+        "role": "variable",
+        "sensitivity": "~30%",
+        "specificity": "—",
+        "notes": "Focal SMA in a minority. Not a reliable diagnostic marker."
+      },
+      {
+        "marker": "Desmin",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — excludes rhabdomyosarcoma."
+      },
+      {
+        "marker": "S100",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — excludes MPNST and nerve sheath tumours."
+      },
+      {
+        "marker": "CD34",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — excludes SFT and DFSP."
+      },
+      {
+        "marker": "Ki-67",
+        "role": "positive",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "High proliferation index — consistent with aggressive morphology but paradoxically excellent prognosis in infants."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "ETV6::NTRK3 fusion — t(12;15)(p13;q25)",
+        "notes": "Present in ~90% of infantile fibrosarcoma. Pan-TRK IHC is the screening tool; confirm with FISH or RNA sequencing. Larotrectinib and entrectinib (NTRK inhibitors) are FDA-approved and produce high response rates, transforming management — many patients avoid amputation."
+      },
+      {
+        "alteration": "NTRK3 other fusions (non-ETV6 partners)",
+        "notes": "~5% of cases. Pan-TRK IHC may still be positive. RNA sequencing captures all NTRK fusions."
+      }
+    ]
+  },
+  {
+    "id": "sarcoma-spindle-cell-rms",
+    "name": "Spindle Cell / Sclerosing Rhabdomyosarcoma (MYOD1-mutant)",
+    "category": "Sarcoma",
+    "markers": [
+      {
+        "marker": "Desmin",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Positive — skeletal muscle lineage marker. Most sensitive muscle marker in RMS."
+      },
+      {
+        "marker": "MyoD1",
+        "role": "positive",
+        "sensitivity": "~85%",
+        "specificity": "—",
+        "notes": "Nuclear positivity confirms myogenic differentiation. MyoD1 IHC detects the protein, not the mutation — MYOD1 L122R mutation requires sequencing."
+      },
+      {
+        "marker": "Myogenin",
+        "role": "variable",
+        "sensitivity": "~40%",
+        "specificity": "—",
+        "notes": "Focal/variable — less consistently positive than in alveolar RMS (where Myogenin is diffuse strong). Focal Myogenin in a spindle cell sarcoma should prompt MYOD1 sequencing."
+      },
+      {
+        "marker": "SMA",
+        "role": "variable",
+        "sensitivity": "~30%",
+        "specificity": "—",
+        "notes": "Focal SMA in a subset — does not exclude RMS."
+      },
+      {
+        "marker": "S100",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — excludes MPNST and spindle cell melanoma."
+      },
+      {
+        "marker": "CK (AE1/AE3)",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — excludes spindle cell carcinoma and synovial sarcoma."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "MYOD1 L122R hotspot mutation",
+        "notes": "Defines the most aggressive adult-type spindle cell / sclerosing RMS. Associated with PIK3CA co-mutation. Very poor prognosis — does not respond well to standard RMS chemotherapy. Distinct from congenital spindle cell RMS (VGLL2/NCOA2 rearrangements, better prognosis) and TFCP2-rearranged intraosseous variant."
+      },
+      {
+        "alteration": "VGLL2 / NCOA2 / CITED2 rearrangements — congenital variant",
+        "notes": "Congenital spindle cell RMS in infants/neonates. Better prognosis than MYOD1-mutant type. Distinct molecular subtype — not MYOD1-mutant."
+      }
+    ]
+  },
+  {
+    "id": "sarcoma-pleomorphic-rms",
+    "name": "Pleomorphic Rhabdomyosarcoma",
+    "category": "Sarcoma",
+    "markers": [
+      {
+        "marker": "Desmin",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "Positive — muscle lineage. Most sensitive marker. Extent of positivity varies; confirm with Myogenin or MyoD1."
+      },
+      {
+        "marker": "Myogenin",
+        "role": "variable",
+        "sensitivity": "~30%",
+        "specificity": "high",
+        "notes": "Focal positivity — less diffuse than alveolar RMS. Even focal Myogenin nuclear positivity in a pleomorphic sarcoma is highly specific for RMS lineage. Distinguishes pleomorphic RMS from UPS/MFH."
+      },
+      {
+        "marker": "MyoD1",
+        "role": "variable",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "Variable nuclear positivity. Use alongside Myogenin."
+      },
+      {
+        "marker": "SMA",
+        "role": "variable",
+        "sensitivity": "~40%",
+        "specificity": "—",
+        "notes": "Focal SMA can occur — does not exclude the diagnosis."
+      },
+      {
+        "marker": "CK (AE1/AE3)",
+        "role": "variable",
+        "sensitivity": "~20%",
+        "specificity": "—",
+        "notes": "Focal keratin positivity in ~20% — a potential diagnostic pitfall. Can mimic sarcomatoid carcinoma. Confirm muscle lineage with Myogenin/MyoD1."
+      },
+      {
+        "marker": "S100",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — excludes melanoma and MPNST in the differential."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "Complex karyotype — no characteristic fusion",
+        "notes": "Adult-onset; typically extremity location. No PAX3/7::FOXO1 fusion (unlike ARMS). Complex genomic alterations including TP53, RB1. Very aggressive — poor prognosis despite multimodal therapy."
+      }
+    ]
+  },
+  {
+    "id": "sarcoma-melanotic-nerve-sheath",
+    "name": "Malignant Melanotic Nerve Sheath Tumour",
+    "category": "Sarcoma",
+    "markers": [
+      {
+        "marker": "S100",
+        "role": "positive",
+        "sensitivity": "~99%",
+        "specificity": "—",
+        "notes": "Strongly and diffusely positive — shared with schwannoma. S100 alone cannot distinguish from conventional schwannoma."
+      },
+      {
+        "marker": "HMB45",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "high",
+        "notes": "Positive — the key distinguishing marker from conventional schwannoma (HMB45−). HMB45 positivity in a nerve sheath tumour = malignant melanotic nerve sheath tumour until proven otherwise."
+      },
+      {
+        "marker": "Melan-A / MART-1",
+        "role": "positive",
+        "sensitivity": "~70%",
+        "specificity": "—",
+        "notes": "Positive in most cases."
+      },
+      {
+        "marker": "SOX10",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Strongly positive — shared with schwannoma and MPNST."
+      },
+      {
+        "marker": "PRKAR1A",
+        "role": "loss",
+        "sensitivity": "~50%",
+        "specificity": "high",
+        "notes": "Loss of PRKAR1A nuclear expression in ~50% of cases — associated with Carney complex (germline PRKAR1A mutation). PRKAR1A loss is a marker of Carney complex-related disease and warrants germline testing."
+      },
+      {
+        "marker": "Collagen IV / Laminin (pericellular)",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Pericellular basement membrane deposits — shared with schwannoma. Confirms nerve sheath origin (not melanoma, which lacks pericellular BM)."
+      },
+      {
+        "marker": "CD34",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — excludes SFT."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "PRKAR1A mutation (germline in Carney complex)",
+        "notes": "~50% are Carney complex-associated (multiple endocrine neoplasia + cardiac myxoma + skin pigmentation + PPNAD). Germline testing indicated in all patients. Sporadic cases lack PRKAR1A mutation."
+      },
+      {
+        "alteration": "GNAQ / GNA11 mutations (subset)",
+        "notes": "Some cases harbour GNAQ or GNA11 mutations — overlap with uveal melanoma signalling pathway."
+      }
+    ]
+  },
+  {
+    "id": "sarcoma-kaposiform-he",
+    "name": "Kaposiform Haemangioendothelioma (KHE)",
+    "category": "Sarcoma",
+    "markers": [
+      {
+        "marker": "CD31",
+        "role": "positive",
+        "sensitivity": "~99%",
+        "specificity": "—",
+        "notes": "Strongly positive endothelial marker."
+      },
+      {
+        "marker": "CD34",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Positive; endothelial marker."
+      },
+      {
+        "marker": "D2-40 (Podoplanin)",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Positive — lymphatic endothelial differentiation. Both blood vascular (CD34+) and lymphatic (D2-40+) markers are co-expressed — a characteristic mixed phenotype."
+      },
+      {
+        "marker": "GLUT1",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "high",
+        "notes": "Negative — the critical distinction from infantile haemangioma (GLUT1 strongly positive). GLUT1 negativity in a paediatric vascular lesion excludes infantile haemangioma and supports KHE."
+      },
+      {
+        "marker": "WT1",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — infantile haemangioma is WT1+. Further supports distinction."
+      },
+      {
+        "marker": "HHV-8 (LANA-1)",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "high",
+        "notes": "Negative — excludes Kaposi sarcoma (LANA-1+). Morphological overlap in spindled areas makes this distinction essential."
+      },
+      {
+        "marker": "SMA",
+        "role": "variable",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "Variable pericyte/myofibroblastic component."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "GNA14 / PIK3CA mutations (subset)",
+        "notes": "Somatic activating mutations in the PI3K/AKT pathway identified in a subset. mTOR inhibitors (sirolimus) are the standard treatment for KHE — particularly for Kasabach-Merritt phenomenon (consumptive thrombocytopenia, a life-threatening complication occurring in ~70% of KHE)."
+      }
+    ]
+  },
+  {
+    "id": "sarcoma-lipoblastoma",
+    "name": "Lipoblastoma",
+    "category": "Sarcoma",
+    "markers": [
+      {
+        "marker": "S100",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Positive in lipoblasts and mature lipocytes. Shared with myxoid liposarcoma."
+      },
+      {
+        "marker": "CD34",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "Positive in stromal cells of the myxoid areas."
+      },
+      {
+        "marker": "MDM2 / CDK4",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "high",
+        "notes": "Negative — the most important distinction from ALT/well-differentiated liposarcoma (MDM2+/CDK4+ amplified). MDM2/CDK4 negativity confirms lipoblastoma over ALT when morphology is ambiguous."
+      },
+      {
+        "marker": "PLAG1 (IHC)",
+        "role": "positive",
+        "sensitivity": "~70%",
+        "specificity": "high",
+        "notes": "Nuclear PLAG1 overexpression detectable by IHC — surrogate for PLAG1 gene rearrangement. Useful when FISH is not available."
+      },
+      {
+        "marker": "Ki-67",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Low proliferation index in mature areas, higher in immature myxoid zones."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "PLAG1 rearrangement (8q12)",
+        "notes": "Present in ~70% of lipoblastoma. Translocation partners include HAS2, RAD51L1, CHCHD7. Virtually all patients are under 3 years of age — age is itself a diagnostic criterion. PLAG1 FISH confirms the diagnosis. Excellent prognosis with excision; may recur locally."
+      },
+      {
+        "alteration": "HMGA2 rearrangement (12q14) — PLAG1-negative subset",
+        "notes": "~15% of lipoblastoma. Mutually exclusive with PLAG1 rearrangement. HMGA2 IHC may show nuclear overexpression."
+      }
+    ]
+  },
+  {
+    "id": "sarcoma-aggressive-angiomyxoma",
+    "name": "Aggressive Angiomyxoma",
+    "category": "Sarcoma",
+    "markers": [
+      {
+        "marker": "ER (Oestrogen Receptor)",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Strongly positive — the most characteristic and clinically useful marker. ER positivity in a hypocellular myxoid pelvic/perineal tumour is a strong pointer to aggressive angiomyxoma."
+      },
+      {
+        "marker": "PR (Progesterone Receptor)",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "Positive. The ER+/PR+ profile reflects hormone-responsive stromal differentiation and is the rationale for GnRH agonist therapy in recurrent disease."
+      },
+      {
+        "marker": "HMGA2",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "Nuclear HMGA2 overexpression — surrogate for HMGA2 rearrangement. Distinguishes aggressive angiomyxoma from other pelvic myxoid lesions."
+      },
+      {
+        "marker": "Desmin",
+        "role": "positive",
+        "sensitivity": "~70%",
+        "specificity": "—",
+        "notes": "Focal positivity in perivascular spindle cells."
+      },
+      {
+        "marker": "SMA",
+        "role": "variable",
+        "sensitivity": "~60%",
+        "specificity": "—",
+        "notes": "Focal SMA in perivascular cells."
+      },
+      {
+        "marker": "CD34",
+        "role": "variable",
+        "sensitivity": "~40%",
+        "specificity": "—",
+        "notes": "Variable stromal CD34."
+      },
+      {
+        "marker": "S100",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — excludes myxoid nerve sheath tumours."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "HMGA2 rearrangement (12q14)",
+        "notes": "Present in ~70% of aggressive angiomyxoma. Same locus as lipoblastoma and some uterine leiomyomas. HMGA2 FISH confirms rearrangement. Recurs locally in ~30–70% — not a truly benign tumour despite name."
+      },
+      {
+        "alteration": "GnRH agonist responsiveness",
+        "notes": "ER+/PR+ status makes aggressive angiomyxoma hormonally sensitive. GnRH agonists (leuprolide) can shrink tumour preoperatively or manage inoperable recurrence. Not an IHC finding but directly informed by ER/PR results."
+      }
+    ]
+  },
+  {
+    "id": "sarcoma-myxoid-pleomorphic-liposarcoma",
+    "name": "Myxoid Pleomorphic Liposarcoma (MPLPS)",
+    "category": "Sarcoma",
+    "markers": [
+      {
+        "marker": "S100",
+        "role": "variable",
+        "sensitivity": "~70%",
+        "specificity": "—",
+        "notes": "Variably positive in lipoblastic areas."
+      },
+      {
+        "marker": "MDM2 / CDK4",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "high",
+        "notes": "Negative by IHC and FISH — distinguishes from ALT/dedifferentiated liposarcoma (MDM2 amplified). MDM2/CDK4 negativity is required for this diagnosis."
+      },
+      {
+        "marker": "DDIT3 (CHOP) rearrangement (FISH)",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "high",
+        "notes": "FISH for DDIT3 (12q13) rearrangement is negative — no FUS/EWSR1::DDIT3 fusion, which is the defining event in conventional myxoid liposarcoma. DDIT3 amplification (without fusion) is the molecular event in MPLPS."
+      },
+      {
+        "marker": "Ki-67",
+        "role": "positive",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "High — reflects aggressive behaviour. Often >30%."
+      },
+      {
+        "marker": "p53",
+        "role": "variable",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "Aberrant p53 expression in a subset — TP53 mutation is a common secondary alteration."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "DDIT3 amplification — not FUS/EWSR1::DDIT3 fusion",
+        "notes": "New entity in WHO 5th edition (2022). Predominantly young patients (<40 yr), mediastinal/retroperitoneal/limb location. DDIT3 amplification (without translocation partner) by FISH distinguishes from myxoid LPS. Very aggressive — poor prognosis, high distant metastasis rate. Morphology: myxoid stroma + lipoblasts + high-grade pleomorphic areas."
+      }
+    ]
+  },
+
+  // ── Bone — additional WHO 5th edition entities ────────────────────────────
+  {
+    "id": "bone-low-grade-central-osteosarcoma",
+    "name": "Low-Grade Central Osteosarcoma",
+    "category": "Bone",
+    "markers": [
+      {
+        "marker": "MDM2",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "high",
+        "notes": "Nuclear MDM2 overexpression — reflects 12q13-15 amplification (same amplicon as ALT/dedifferentiated liposarcoma). MDM2 IHC positivity is the most important diagnostic marker and excludes fibrous dysplasia. Confirm amplification by FISH."
+      },
+      {
+        "marker": "CDK4",
+        "role": "positive",
+        "sensitivity": "~85%",
+        "specificity": "—",
+        "notes": "Nuclear CDK4 — co-amplified with MDM2 at 12q13-15. MDM2+/CDK4+ co-expression strongly supports LGCOS (and ALT/DDLS); fibrous dysplasia is MDM2−/CDK4−."
+      },
+      {
+        "marker": "SATB2",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "Nuclear SATB2 in osteoblastic matrix-producing cells — confirms osteogenic differentiation. Absent in fibrous dysplasia stromal cells."
+      },
+      {
+        "marker": "S100",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — no chondroid differentiation."
+      },
+      {
+        "marker": "Ki-67",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Low — consistent with low-grade behaviour, but overlap with fibrous dysplasia. Ki-67 alone does not distinguish LGCOS from FD."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "MDM2 + CDK4 co-amplification (12q13-15)",
+        "notes": "Present in ~90% of LGCOS. FISH demonstrates high-level amplification. This is the same amplicon as ALT/WDLS — shared biology explaining the morphological overlap with sclerosing/fibrous liposarcoma. Dedifferentiation to high-grade osteosarcoma occurs in ~15–30% with recurrence."
+      }
+    ]
+  },
+  {
+    "id": "bone-clear-cell-chondrosarcoma",
+    "name": "Clear Cell Chondrosarcoma",
+    "category": "Bone",
+    "markers": [
+      {
+        "marker": "S100",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Positive — chondrogenic lineage."
+      },
+      {
+        "marker": "SOX9",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Nuclear SOX9 — chondrogenic transcription factor."
+      },
+      {
+        "marker": "IDH1 R132H (IHC)",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "high",
+        "notes": "Negative by IHC — clear cell chondrosarcoma is IDH1/2 wildtype. IDH1 R132H positivity argues strongly against clear cell chondrosarcoma and favours conventional central chondrosarcoma. Note: IHC only tests R132H; IDH2 requires sequencing."
+      },
+      {
+        "marker": "CD68",
+        "role": "variable",
+        "sensitivity": "~60%",
+        "specificity": "—",
+        "notes": "Positive in the osteoclast-like giant cells (reactive) — a characteristic feature. CD68+ giant cells in an epiphyseal chondrogenic tumour are a clue to this entity."
+      },
+      {
+        "marker": "SATB2",
+        "role": "variable",
+        "sensitivity": "~40%",
+        "specificity": "—",
+        "notes": "Focal SATB2 in areas with reactive woven bone formation — osteoblastic activity around tumour cells."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "IDH1/IDH2 wildtype",
+        "notes": "Clear cell chondrosarcoma lacks IDH mutations (unlike central conventional chondrosarcoma, ~50% IDH1/2-mutant). Exclusively epiphyseal location, low-grade nuclear features, late metastasis. Wide excision is curative in most cases; ~15% metastasise to lung late."
+      }
+    ]
+  },
+  {
+    "id": "bone-aneurysmal-bone-cyst",
+    "name": "Aneurysmal Bone Cyst (ABC)",
+    "category": "Bone",
+    "markers": [
+      {
+        "marker": "H3.3 G34W (IHC)",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "high",
+        "notes": "Negative — critical distinction from giant cell tumour of bone (GCT), which is H3.3 G34W-positive in ~90%. H3.3 G34W IHC (clone RM193) is the single most important marker: positive = GCT; negative = ABC (or other GCT mimic). Both contain osteoclast-like giant cells on H&E."
+      },
+      {
+        "marker": "CD68",
+        "role": "positive",
+        "sensitivity": "~99%",
+        "specificity": "—",
+        "notes": "Positive in osteoclast-like giant cells (reactive macrophage/osteoclast lineage). Non-specific — present in GCT, ABC, and telangiectatic osteosarcoma."
+      },
+      {
+        "marker": "SMA",
+        "role": "positive",
+        "sensitivity": "~70%",
+        "specificity": "—",
+        "notes": "Positive in mononuclear stromal cells — myofibroblastic phenotype."
+      },
+      {
+        "marker": "MDM2 / CDK4",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "high",
+        "notes": "Negative — excludes low-grade central osteosarcoma (MDM2+/CDK4+ amplified), which can radiologically and histologically mimic ABC/benign fibrous lesion."
+      },
+      {
+        "marker": "p63",
+        "role": "positive",
+        "sensitivity": "~85%",
+        "specificity": "—",
+        "notes": "Nuclear p63 in mononuclear stromal cells — a useful marker for the neoplastic cell population in ABC (unlike osteoclast-like giant cells which are reactive). Also positive in GCT stromal cells."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "USP6 rearrangement (17p13) — FISH",
+        "notes": "Present in ~70% of primary ABC. Translocation fuses USP6 to various promoter partners (CDH11, ZNF9, COL1A1, THRAP3). USP6 FISH confirms primary ABC and excludes secondary ABC (which can occur in GCT, chondroblastoma, osteoblastoma, FD — secondary ABC is USP6 wildtype)."
+      }
+    ]
+  },
+  {
+    "id": "sarcoma-ewsr1-non-ets",
+    "name": "Round Cell Sarcoma with EWSR1–Non-ETS Fusions",
+    "category": "Sarcoma",
+    "markers": [
+      {
+        "marker": "CD99",
+        "role": "variable",
+        "sensitivity": "~60%",
+        "specificity": "—",
+        "notes": "Variable — unlike Ewing sarcoma (CD99 diffuse membranous in >95%), this entity shows inconsistent CD99 expression. Negative or weak CD99 in a round cell sarcoma does not exclude EWSR1-non-ETS sarcoma."
+      },
+      {
+        "marker": "NKX2.2",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "high",
+        "notes": "Negative — NKX2.2 is highly sensitive and specific for Ewing sarcoma with EWSR1::FLI1 or ETV1/4 fusions (~90%). NKX2.2 negativity in a CD99+ round cell sarcoma supports a non-Ewing EWSR1 fusion."
+      },
+      {
+        "marker": "Vimentin",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Diffuse positive — non-specific mesenchymal marker."
+      },
+      {
+        "marker": "CK (focal)",
+        "role": "variable",
+        "sensitivity": "~20%",
+        "specificity": "—",
+        "notes": "Focal keratin may be present in EWSR1::PATZ1 fusion cases — a pitfall mimicking poorly differentiated carcinoma or synovial sarcoma."
+      },
+      {
+        "marker": "S100",
+        "role": "variable",
+        "sensitivity": "~30%",
+        "specificity": "—",
+        "notes": "Focal S100 in EWSR1::PATZ1 subset — can mimic melanoma or MPNST."
+      },
+      {
+        "marker": "SOX10",
+        "role": "variable",
+        "sensitivity": "~20%",
+        "specificity": "—",
+        "notes": "Variable; present in EWSR1::PATZ1 subset."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "EWSR1::PATZ1 fusion (most common)",
+        "notes": "EWSR1::PATZ1 is the most common non-ETS EWSR1 fusion. Thoracic/abdominal location, young adults. Distinct morphology: round to spindle cells, S100 focal+, CK focal+. Prognosis: intermediate."
+      },
+      {
+        "alteration": "EWSR1::SP3 / EWSR1::ZSF1 / other non-ETS partners",
+        "notes": "Rare. RNA sequencing is the only reliable method to fully characterize EWSR1 fusion partners — standard EWSR1 FISH detects rearrangement but cannot identify the partner. Partner identification has diagnostic and potential therapeutic implications."
+      }
+    ]
   }
 ]
