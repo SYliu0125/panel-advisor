@@ -13307,5 +13307,777 @@ export const DIAGNOSES = [
         "notes": "Graded 1–3 by proportion of immature neuroepithelium per low-power field. Grade 3 (>3 low-power fields) associated with higher recurrence risk. SOX2 IHC quantifies immature neural component more objectively than H&E alone."
       }
     ]
+  },
+
+  // ── Head & Neck — additional WHO 5th edition entities ─────────────────────
+  {
+    "id": "sinonasal-itac",
+    "name": "Sinonasal Intestinal-Type Adenocarcinoma (ITAC)",
+    "category": "Head & Neck",
+    "markers": [
+      {
+        "marker": "CDX2",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Strongly and diffusely positive — intestinal transcription factor. The most sensitive marker for ITAC. Also positive in metastatic colorectal carcinoma; site correlation is essential."
+      },
+      {
+        "marker": "CK20",
+        "role": "positive",
+        "sensitivity": "~70%",
+        "specificity": "—",
+        "notes": "Positive. CK7−/CK20+ pattern (colonic subtype) or CK7+/CK20+ (papillary subtype). Profile mirrors colorectal carcinoma — IHC cannot distinguish ITAC from metastatic CRC."
+      },
+      {
+        "marker": "CK7",
+        "role": "variable",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "Variable by subtype: papillary ITAC tends to be CK7+/CK20+; colonic ITAC tends to be CK7−/CK20+."
+      },
+      {
+        "marker": "Villin",
+        "role": "positive",
+        "sensitivity": "~85%",
+        "specificity": "—",
+        "notes": "Brush border protein; positive in intestinal differentiation. Supports enteric phenotype alongside CDX2."
+      },
+      {
+        "marker": "MUC2",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "Goblet cell mucin; positive in mucinous and mixed subtypes."
+      },
+      {
+        "marker": "TTF-1",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — helps exclude metastatic lung adenocarcinoma and thyroid carcinoma."
+      },
+      {
+        "marker": "PAX8",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — excludes thyroid, renal, and Müllerian primaries."
+      },
+      {
+        "marker": "p53",
+        "role": "variable",
+        "sensitivity": "~60%",
+        "specificity": "—",
+        "notes": "Aberrant p53 in high-grade subtypes. Papillary ITAC (low-grade) may show wildtype pattern."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "KRAS / BRAF mutations",
+        "notes": "KRAS mutation in ~30%; BRAF V600E in ~10% of ITAC — same landscape as colorectal carcinoma. Supports the intestinal metaplasia–adenoma–carcinoma pathway."
+      },
+      {
+        "alteration": "Occupational exposure: wood dust / leather dust",
+        "notes": "Strong occupational association. Hardwood dust (furniture makers) is the strongest known carcinogen for sinonasal adenocarcinoma. Classified as IARC Group 1. Not detectable by IHC but essential clinical context."
+      }
+    ]
+  },
+  {
+    "id": "sinonasal-smarca4-deficient",
+    "name": "SMARCA4-Deficient Sinonasal Carcinoma",
+    "category": "Head & Neck",
+    "markers": [
+      {
+        "marker": "SMARCA4 (BRG1)",
+        "role": "loss",
+        "sensitivity": "~99%",
+        "specificity": "high",
+        "notes": "Loss of SMARCA4/BRG1 nuclear expression defines this entity. Absent nuclear staining in tumour cells with retained staining in internal controls (endothelium, lymphocytes). Clone EPNCIR111A or equivalent."
+      },
+      {
+        "marker": "SMARCB1 (INI1)",
+        "role": "retained",
+        "sensitivity": "—",
+        "specificity": "high",
+        "notes": "Retained SMARCB1 is key — distinguishes SMARCA4-deficient carcinoma from SMARCB1-deficient carcinoma (separate entity). Both are SWI/SNF complex-deficient but via different subunits."
+      },
+      {
+        "marker": "SOX2",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "Frequently overexpressed — reflects dedifferentiated/stem-like phenotype."
+      },
+      {
+        "marker": "CD34",
+        "role": "variable",
+        "sensitivity": "~40%",
+        "specificity": "—",
+        "notes": "Focal CD34 positivity in a subset — unusual for carcinoma and can cause diagnostic confusion with sarcoma or SFT."
+      },
+      {
+        "marker": "CK (AE1/AE3)",
+        "role": "variable",
+        "sensitivity": "~60%",
+        "specificity": "—",
+        "notes": "Focal keratin positivity confirms carcinomatous lineage; may be weak or negative in poorly differentiated areas."
+      },
+      {
+        "marker": "p40 / p63",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Typically negative — lacks squamous differentiation. Distinguishes from SMARCB1-deficient basaloid SCC (which may be p40 variable)."
+      },
+      {
+        "marker": "Synaptophysin / CD56",
+        "role": "variable",
+        "sensitivity": "~30%",
+        "specificity": "—",
+        "notes": "Focal NE marker expression in a subset — can mimic NEC. Ki-67 and context help distinguish."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "SMARCA4 biallelic inactivation",
+        "notes": "Mutation (truncating or missense) + LOH or homozygous deletion. Very aggressive — median survival <12 months. No approved targeted therapy; clinical trials exploring EZH2 inhibitors (synthetic lethality with SWI/SNF loss)."
+      }
+    ]
+  },
+  {
+    "id": "sinonasal-hmsc",
+    "name": "HPV-Related Multiphenotypic Sinonasal Carcinoma (HMSC)",
+    "category": "Head & Neck",
+    "markers": [
+      {
+        "marker": "p16",
+        "role": "positive",
+        "sensitivity": "~100%",
+        "specificity": "—",
+        "notes": "Diffuse block-positive — reflects high-risk HPV (predominantly HPV33, not HPV16 as in oropharynx). p16 positivity is required for diagnosis."
+      },
+      {
+        "marker": "HPV ISH (high-risk)",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "high",
+        "notes": "RNA ISH or DNA ISH confirms transcriptionally active HPV. HPV33 is the predominant type — distinguish from HPV16-driven oropharyngeal SCC."
+      },
+      {
+        "marker": "p63 / p40",
+        "role": "positive",
+        "sensitivity": "~85%",
+        "specificity": "—",
+        "notes": "Positive in squamous and myoepithelial components. The multiphenotypic nature — squamous + glandular + myoepithelial differentiation in one tumour — is the defining feature."
+      },
+      {
+        "marker": "S100",
+        "role": "positive",
+        "sensitivity": "~70%",
+        "specificity": "—",
+        "notes": "Positive in myoepithelial areas."
+      },
+      {
+        "marker": "SMA",
+        "role": "variable",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "Variably positive in myoepithelial component."
+      },
+      {
+        "marker": "CK7",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "Positive in glandular/ductal areas."
+      },
+      {
+        "marker": "GFAP",
+        "role": "variable",
+        "sensitivity": "~40%",
+        "specificity": "—",
+        "notes": "Focal GFAP in myoepithelial component — an unusual feature that raises suspicion for HMSC in an HPV+ sinonasal tumour."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "High-risk HPV — predominantly HPV33",
+        "notes": "HPV33 predominates in HMSC (vs HPV16 in oropharyngeal SCC). Indolent behaviour despite histologic complexity and locally aggressive appearance. Regional metastasis occurs but distant metastasis is rare. HPV typing has clinical relevance."
+      }
+    ]
+  },
+  {
+    "id": "sinonasal-teratocarcinosarcoma",
+    "name": "Sinonasal Teratocarcinosarcoma",
+    "category": "Head & Neck",
+    "markers": [
+      {
+        "marker": "AFP (Alpha-fetoprotein)",
+        "role": "positive",
+        "sensitivity": "~70%",
+        "specificity": "—",
+        "notes": "Positive in fetal-type clear cell glandular component. AFP expression is a hallmark of the teratoid elements. Serum AFP may be elevated."
+      },
+      {
+        "marker": "Synaptophysin / Chromogranin",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "Positive in neuroepithelial / primitive neuroectodermal component."
+      },
+      {
+        "marker": "GFAP",
+        "role": "positive",
+        "sensitivity": "~70%",
+        "specificity": "—",
+        "notes": "Positive in glial (astrocytic) elements — key component of the teratoid areas."
+      },
+      {
+        "marker": "CK (AE1/AE3, CK7)",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Positive in epithelial (carcinomatous) component — squamoid, glandular, or fetal-type clear cells."
+      },
+      {
+        "marker": "Desmin / SMA / Myogenin",
+        "role": "variable",
+        "sensitivity": "~40%",
+        "specificity": "—",
+        "notes": "Positive in rhabdomyoblastic or smooth muscle (sarcomatous) elements."
+      },
+      {
+        "marker": "S100 / SOX10",
+        "role": "variable",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "Positive in cartilaginous or neural elements."
+      },
+      {
+        "marker": "OCT3/4 / SALL4",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — distinguishes from true GCT/germinoma. Teratocarcinosarcoma is not a gonadal-type GCT and lacks stem cell/GCT markers."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "SMARCA4 alteration (subset)",
+        "notes": "A subset of sinonasal teratocarcinosarcomas harbour SMARCA4 mutations. Highly aggressive — median survival ~18 months. Wide local excision + adjuvant therapy; no standard protocol."
+      }
+    ]
+  },
+  {
+    "id": "salivary-carcinoma-ex-pa",
+    "name": "Carcinoma ex Pleomorphic Adenoma (Salivary Gland)",
+    "category": "Head & Neck",
+    "markers": [
+      {
+        "marker": "Ki-67",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Elevated in malignant component vs low in benign PA (usually <5%). Ki-67 >10% in a PA-like tumour is a red flag for malignant transformation. Spatial heterogeneity — sample both PA and carcinomatous areas."
+      },
+      {
+        "marker": "p53",
+        "role": "variable",
+        "sensitivity": "~60%",
+        "specificity": "—",
+        "notes": "Aberrant p53 (strong diffuse or null) in malignant component. PA itself usually shows wildtype p53. Concordant p53 aberrancy supports malignant transformation."
+      },
+      {
+        "marker": "HER2",
+        "role": "variable",
+        "sensitivity": "~30%",
+        "specificity": "—",
+        "notes": "HER2 amplification in ~30% when malignant component is salivary duct carcinoma-type (the most common carcinoma ex PA). Mandatory HER2 IHC/ISH — trastuzumab-based therapy applicable."
+      },
+      {
+        "marker": "AR (Androgen Receptor)",
+        "role": "variable",
+        "sensitivity": "~60%",
+        "specificity": "—",
+        "notes": "Positive in SDC-type malignant component. AR+ in carcinoma ex PA with SDC features."
+      },
+      {
+        "marker": "GATA3",
+        "role": "variable",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "Positive in SDC-type component."
+      },
+      {
+        "marker": "S100 / SMA / GFAP",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "Retained in the residual benign PA component (myoepithelial + stromal elements). Identifying these areas confirms the PA background — necessary for diagnosis."
+      },
+      {
+        "marker": "p63 / CK5/6",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Positive in squamous component if malignant component is adenosquamous or epidermoid type."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "PLAG1 or HMGA2 rearrangement (PA background)",
+        "notes": "PA typically carries PLAG1::CTNNB1 or HMGA2 rearrangements — detectable by FISH. Carcinoma ex PA retains these in the PA component and acquires additional somatic mutations in the malignant component."
+      },
+      {
+        "alteration": "ERBB2 amplification / TP53 mutation (malignant component)",
+        "notes": "Acquired in the malignant transformation step. TP53 mutation is the most common driver of malignant transformation. HER2 amplification enriched in SDC-type malignant component."
+      }
+    ]
+  },
+  {
+    "id": "salivary-microsecretory-adenocarcinoma",
+    "name": "Microsecretory Adenocarcinoma (Salivary Gland)",
+    "category": "Head & Neck",
+    "markers": [
+      {
+        "marker": "S100",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Strongly and diffusely positive in tumour cells. Combined S100+/SOX10+ is the most characteristic IHC profile."
+      },
+      {
+        "marker": "SOX10",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Strongly positive — reflects neural crest/myoepithelial lineage affinity."
+      },
+      {
+        "marker": "DOG1",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "Positive — an unusual finding in a salivary carcinoma (DOG1 typically marks GIST and acinic cell carcinoma). DOG1 positivity in an S100+/SOX10+ salivary tumour with microcystic architecture should prompt consideration of microsecretory adenocarcinoma."
+      },
+      {
+        "marker": "Mammoglobin",
+        "role": "variable",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "Focal/variable positivity."
+      },
+      {
+        "marker": "CK7",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Positive in ductal/luminal cells."
+      },
+      {
+        "marker": "p63 / p40",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — no myoepithelial layer around acini (unlike secretory carcinoma and acinic cell carcinoma). Absence of myoepithelial cells is a key diagnostic feature."
+      },
+      {
+        "marker": "GATA3",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — helps distinguish from secretory carcinoma (GATA3+ in subset) and salivary duct carcinoma."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "MEF2C::SS18 fusion",
+        "notes": "Defining molecular event, detectable by RNA sequencing or FISH. Present in ~90% of microsecretory adenocarcinoma. The fusion is unique to this entity — its identification confirms the diagnosis. Indolent behaviour; rarely metastasises."
+      }
+    ]
+  },
+  {
+    "id": "salivary-sclerosing-microcystic-adenocarcinoma",
+    "name": "Sclerosing Microcystic Adenocarcinoma (Salivary Gland)",
+    "category": "Head & Neck",
+    "markers": [
+      {
+        "marker": "CK7",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Diffusely positive in ductal elements."
+      },
+      {
+        "marker": "S100",
+        "role": "variable",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "Variably positive."
+      },
+      {
+        "marker": "SOX10",
+        "role": "variable",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "Variably positive."
+      },
+      {
+        "marker": "p63",
+        "role": "variable",
+        "sensitivity": "~60%",
+        "specificity": "—",
+        "notes": "Focal p63 in outer abluminal cells — minimal myoepithelial layer. Much less than in pleomorphic adenoma or myoepithelioma."
+      },
+      {
+        "marker": "CEA",
+        "role": "positive",
+        "sensitivity": "~70%",
+        "specificity": "—",
+        "notes": "Positive in luminal cells. Distinguishes from benign sclerosing lesions."
+      },
+      {
+        "marker": "Ki-67",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Low proliferation index — consistent with indolent low-grade behaviour."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "No defining recurrent fusion identified to date",
+        "notes": "New entity in WHO 5th edition (2022). No pathognomonic molecular marker yet. Diagnosis is based on morphology (syringoma-like infiltrative microcystic pattern in a sclerotic stroma) plus IHC profile. Indolent behaviour; perineural invasion common despite low grade."
+      }
+    ]
+  },
+  {
+    "id": "oral-scc",
+    "name": "Oral Cavity Squamous Cell Carcinoma (HPV-independent)",
+    "category": "Head & Neck",
+    "markers": [
+      {
+        "marker": "p40",
+        "role": "positive",
+        "sensitivity": "~98%",
+        "specificity": "—",
+        "notes": "Confirms squamous lineage. Preferred over p63 for specificity."
+      },
+      {
+        "marker": "CK5/6",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Positive; squamous marker."
+      },
+      {
+        "marker": "p16",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative or non-block patchy — the defining contrast with HPV-associated oropharyngeal SCC. The oral cavity (floor of mouth, anterior tongue, buccal mucosa, gingiva, hard palate) is predominantly a HPV-independent site. Block-positive p16 in oral SCC does NOT carry the same prognostic significance as in oropharyngeal SCC."
+      },
+      {
+        "marker": "p53",
+        "role": "variable",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "Aberrant p53 in ~50% — reflects TP53 mutation, characteristic of alcohol/tobacco-driven carcinogenesis."
+      },
+      {
+        "marker": "PD-L1 (CPS)",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "PD-L1 CPS ≥1 required for pembrolizumab in recurrent/metastatic oral SCC (KEYNOTE-048). Use 22C3 clone."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "TP53 mutation",
+        "notes": "~60–70% of oral SCC. The most common mutation; associated with tobacco/alcohol exposure. HPV+ oral SCC (minority, ~15–25%) tends to be TP53 wildtype."
+      },
+      {
+        "alteration": "CDKN2A / PIK3CA / HRAS mutations",
+        "notes": "Common co-alterations. HRAS mutations are enriched in oral SCC compared to oropharyngeal SCC. No approved targeted therapies for these mutations currently."
+      },
+      {
+        "alteration": "Copy number alterations: 3q26 (PIK3CA/SOX2) amplification",
+        "notes": "Recurrent amplification in oral SCC. 3q amplification is a hallmark of tobacco-related head and neck SCC."
+      }
+    ]
+  },
+  {
+    "id": "laryngeal-scc",
+    "name": "Laryngeal Squamous Cell Carcinoma",
+    "category": "Head & Neck",
+    "markers": [
+      {
+        "marker": "p40",
+        "role": "positive",
+        "sensitivity": "~98%",
+        "specificity": "—",
+        "notes": "Confirms squamous lineage. Essential when tumour is poorly differentiated or shows unusual morphology."
+      },
+      {
+        "marker": "CK5/6",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Positive; squamous marker."
+      },
+      {
+        "marker": "p16",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "HPV is present in only ~5% of laryngeal SCC (much lower than oropharynx ~70%). p16 is therefore a poor surrogate for HPV at this site — a p16-positive laryngeal SCC does NOT have the same favourable prognosis as p16-positive oropharyngeal SCC. HPV testing by ISH is necessary if HPV status is clinically relevant."
+      },
+      {
+        "marker": "p53",
+        "role": "variable",
+        "sensitivity": "~55%",
+        "specificity": "—",
+        "notes": "Aberrant p53 in a majority — reflects TP53 mutation from tobacco carcinogenesis. More common in glottic and supraglottic SCC."
+      },
+      {
+        "marker": "PD-L1 (CPS / TPS)",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "PD-L1 assessment for immunotherapy eligibility in recurrent/metastatic disease (pembrolizumab, nivolumab)."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "TP53 mutation",
+        "notes": "~50–60% of laryngeal SCC. Tobacco-related carcinogenesis. Glottic SCC (vocal cord) is the most common subtype and has the best prognosis due to early hoarseness presentation."
+      },
+      {
+        "alteration": "CDKN2A deletion / PIK3CA mutation",
+        "notes": "Common co-alterations. Similar landscape to other tobacco-associated HNSCC."
+      },
+      {
+        "alteration": "FGFR3 mutation (subset)",
+        "notes": "Enriched in laryngeal SCC compared to oropharyngeal. FGFR-targeted therapy under investigation."
+      }
+    ]
+  },
+  {
+    "id": "hn-mucosal-melanoma",
+    "name": "Mucosal Melanoma (Head and Neck)",
+    "category": "Head & Neck",
+    "markers": [
+      {
+        "marker": "S100",
+        "role": "positive",
+        "sensitivity": "~99%",
+        "specificity": "—",
+        "notes": "Strongly positive — most sensitive melanocytic marker. Essential first-line marker."
+      },
+      {
+        "marker": "SOX10",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Nuclear positive; more specific than S100 for melanocytic lineage. Particularly useful in desmoplastic or spindled variants."
+      },
+      {
+        "marker": "HMB45",
+        "role": "variable",
+        "sensitivity": "~70%",
+        "specificity": "—",
+        "notes": "Variable — less consistently positive in mucosal melanoma than in cutaneous melanoma. Negative HMB45 does not exclude the diagnosis."
+      },
+      {
+        "marker": "Melan-A / MART-1",
+        "role": "variable",
+        "sensitivity": "~65%",
+        "specificity": "—",
+        "notes": "Variable; may be lost in poorly differentiated or desmoplastic areas."
+      },
+      {
+        "marker": "EBER (ISH)",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — not EBV-associated. Distinguishes from EBV-associated undifferentiated nasopharyngeal carcinoma in the nasopharyngeal location."
+      },
+      {
+        "marker": "CK (AE1/AE3)",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — critical to exclude poorly differentiated carcinoma or NPC. Pitfall: rare focal keratin positivity in melanoma (do not rely on single marker)."
+      },
+      {
+        "marker": "KIT (CD117)",
+        "role": "variable",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "Positive by IHC in ~50% of mucosal melanoma, but KIT mutation is present in only ~15–20%. IHC overexpression does not predict mutation — sequencing required for imatinib eligibility."
+      },
+      {
+        "marker": "BRAF V600E (IHC)",
+        "role": "variable",
+        "sensitivity": "~10%",
+        "specificity": "—",
+        "notes": "Positive in only ~10–15% of mucosal melanoma — much lower than cutaneous (~50%). Do not assume BRAF V600E positivity. BRAF IHC is useful as a screen; confirm with sequencing."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "KIT mutation (exons 9, 11, 13, 17)",
+        "notes": "~15–20% of mucosal melanoma. Imatinib and other KIT inhibitors show activity specifically in KIT-mutant mucosal melanoma (not KIT-amplified without mutation). Mutation sequencing is mandatory — IHC positivity alone is insufficient."
+      },
+      {
+        "alteration": "NRAS mutation",
+        "notes": "~20% of mucosal melanoma — higher rate than in cutaneous melanoma (~15%). MEK inhibitors (trametinib) under investigation."
+      },
+      {
+        "alteration": "BRAF V600E mutation",
+        "notes": "~10–15% — much lower than cutaneous (~50%). When present, BRAF/MEK inhibitors (dabrafenib + trametinib) are applicable. Always test for BRAF in mucosal melanoma despite lower prevalence."
+      },
+      {
+        "alteration": "SF3B1 mutation",
+        "notes": "~10% of mucosal melanoma; more common in uveal and mucosal subtypes than cutaneous. No approved targeted therapy."
+      }
+    ]
+  },
+  {
+    "id": "hn-paraganglioma",
+    "name": "Head and Neck Paraganglioma",
+    "category": "Head & Neck",
+    "markers": [
+      {
+        "marker": "Synaptophysin",
+        "role": "positive",
+        "sensitivity": "~99%",
+        "specificity": "—",
+        "notes": "Strongly positive in chief cells — primary NE marker. Zellballen architecture (nests of chief cells surrounded by sustentacular cells) is characteristic."
+      },
+      {
+        "marker": "Chromogranin A",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Positive in chief cells. Serum CgA may be elevated in functional/secretory tumours."
+      },
+      {
+        "marker": "S100",
+        "role": "positive",
+        "sensitivity": "~85%",
+        "specificity": "—",
+        "notes": "Positive in sustentacular (supporting) cells at the periphery of zellballen — the classic 'sustentacular cell pattern'. S100+ sustentacular cells are reduced or absent in malignant paraganglioma."
+      },
+      {
+        "marker": "SDHB (IHC)",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "high",
+        "notes": "Loss of SDHB cytoplasmic granular staining indicates SDHx mutation (any subunit — SDHA, SDHB, SDHC, or SDHD) — not just SDHB specifically. SDHB IHC is used as a pan-SDH deficiency screen. ~30–40% of head and neck paraganglioma are SDHx-mutant (higher than adrenal pheo). Loss requires germline testing."
+      },
+      {
+        "marker": "SDHA (IHC)",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Loss of SDHA specifically indicates SDHA mutation (SDHB IHC is retained in SDHA-mutant tumours). Use both SDHB and SDHA IHC: SDHB loss + SDHA retained → SDHB/C/D mutation; SDHB loss + SDHA loss → SDHA mutation."
+      },
+      {
+        "marker": "GATA3",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Strongly positive in chief cells — a useful marker to confirm paraganglioma phenotype, especially in metastatic deposits."
+      },
+      {
+        "marker": "Tyrosine hydroxylase",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "Catecholamine synthesis enzyme; marks catecholamine-producing cells. Positive in adrenergic tumours."
+      },
+      {
+        "marker": "CK (AE1/AE3)",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "high",
+        "notes": "Negative — critical to distinguish from medullary thyroid carcinoma (CK+, calcitonin+, CEA+) and neuroendocrine carcinoma (CK+)."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "SDHx mutations (SDHB, SDHC, SDHD, SDHA)",
+        "notes": "~30–40% of head and neck paraganglioma have germline SDHx mutation — much higher than adrenal pheochromocytoma (~10–15%). SDHD and SDHC are enriched in H&N location. Germline testing is recommended in all H&N paraganglioma patients. SDHx-mutant paragangliomas have higher metastatic risk."
+      },
+      {
+        "alteration": "VHL / RET / NF1 mutations",
+        "notes": "Less common in H&N location than adrenal pheochromocytoma. RET mutations (MEN2) and VHL mutations are associated with bilateral/multifocal disease."
+      }
+    ]
+  },
+  {
+    "id": "nasopharynx-lgnppa",
+    "name": "Low-Grade Nasopharyngeal Papillary Adenocarcinoma (LGNPPA)",
+    "category": "Head & Neck",
+    "markers": [
+      {
+        "marker": "TTF-1",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "Positive — a key diagnostic marker and a major diagnostic pitfall. TTF-1 positivity in a nasopharyngeal papillary tumour raises concern for metastatic thyroid carcinoma or lung adenocarcinoma. LGNPPA is TTF-1+ but thyroglobulin-negative and EBER-negative, distinguishing it from both mimics."
+      },
+      {
+        "marker": "CK7",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Diffusely positive."
+      },
+      {
+        "marker": "EBER (ISH)",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "high",
+        "notes": "Negative — essential distinction from nasopharyngeal carcinoma (EBV+). EBV negativity is a required diagnostic feature of LGNPPA."
+      },
+      {
+        "marker": "Thyroglobulin",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "high",
+        "notes": "Negative — distinguishes from metastatic papillary thyroid carcinoma (TTF-1+ and thyroglobulin+). This is the most important differential to exclude."
+      },
+      {
+        "marker": "PAX8",
+        "role": "variable",
+        "sensitivity": "~40%",
+        "specificity": "—",
+        "notes": "Variably positive. PAX8+/thyroglobulin− is compatible with LGNPPA but also with metastatic renal cell carcinoma or Müllerian primary — correlate with imaging."
+      },
+      {
+        "marker": "Napsin-A",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — helps exclude metastatic lung adenocarcinoma (TTF-1+/Napsin-A+)."
+      },
+      {
+        "marker": "p63 / p40",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — excludes squamous differentiation and NPC."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "No defining recurrent alteration identified",
+        "notes": "Rare entity. BRAF V600E rarely reported. The diagnosis is based on location, morphology (papillary architecture, psammoma bodies), and IHC profile. Indolent behaviour — local excision usually curative."
+      }
+    ]
   }
 ]
