@@ -9535,5 +9535,3777 @@ export const DIAGNOSES = [
         "notes": "~15% of pilocytic astrocytoma; more common in supratentorial location. Detectable by V600E IHC. BRAF+MEK inhibitors potentially active."
       }
     ]
+  },
+
+  // ── Breast special subtypes ──────────────────────────────────────────────
+  {
+    "id": "breast-metaplastic-carcinoma",
+    "name": "Metaplastic Carcinoma of the Breast",
+    "category": "Breast",
+    "markers": [
+      {
+        "marker": "ER",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": ">90% triple-negative. Rare focal ER positivity possible in LGASC subtype."
+      },
+      {
+        "marker": "PR",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Essentially always negative."
+      },
+      {
+        "marker": "HER2",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Usually negative/non-amplified."
+      },
+      {
+        "marker": "p63",
+        "role": "positive",
+        "sensitivity": "~77%",
+        "specificity": "—",
+        "notes": "Squamous and spindle cell components. p63 positivity is key evidence of epithelial/myoepithelial lineage when keratins are focal."
+      },
+      {
+        "marker": "CK5/6",
+        "role": "positive",
+        "sensitivity": "~70%",
+        "specificity": "—",
+        "notes": "High-MW keratins support basal/squamous lineage. Use with p63 and AE1/AE3 to confirm epithelial nature of spindle cell areas."
+      },
+      {
+        "marker": "AE1/AE3",
+        "role": "positive",
+        "sensitivity": "~75%",
+        "specificity": "—",
+        "notes": "May be focally positive in spindle cell areas — careful sampling required. MNF116 comparable sensitivity."
+      },
+      {
+        "marker": "CK14",
+        "role": "positive",
+        "sensitivity": "~70%",
+        "specificity": "—",
+        "notes": "Another high-MW keratin; supports basal phenotype."
+      },
+      {
+        "marker": "SMA",
+        "role": "variable",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "Positive in myoepithelial/spindle areas. CD10 and maspin also variably positive."
+      },
+      {
+        "marker": "CD34",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative (100%) — useful to exclude SFT, DFSP, and other CD34+ spindle cell tumours."
+      },
+      {
+        "marker": "SOX10",
+        "role": "variable",
+        "sensitivity": "~40%",
+        "specificity": "—",
+        "notes": "Positive in spindle cell and myoepithelial components; also positive in melanoma and MPNST."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "TP53 mutation",
+        "notes": "Common across all high-grade subtypes. Basal-like or claudin-low transcriptomic profile."
+      },
+      {
+        "alteration": "PIK3CA / PTEN loss",
+        "notes": "PI3K pathway activation (~30–50%). Targetable with PI3K inhibitors in clinical trials."
+      },
+      {
+        "alteration": "EGFR overexpression",
+        "notes": "Common in squamous and spindle subtypes. Not a reliable IHC diagnostic marker but relevant for therapy."
+      }
+    ]
+  },
+  {
+    "id": "breast-mucinous-carcinoma",
+    "name": "Mucinous (Colloid) Carcinoma of the Breast",
+    "category": "Breast",
+    "markers": [
+      {
+        "marker": "ER",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Strongly and diffusely positive. Low-grade nuclear features typical."
+      },
+      {
+        "marker": "PR",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "Usually positive."
+      },
+      {
+        "marker": "HER2",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Rarely amplified."
+      },
+      {
+        "marker": "Synaptophysin",
+        "role": "variable",
+        "sensitivity": "~25%",
+        "specificity": "—",
+        "notes": "Neuroendocrine differentiation in a subset (mucinous B subtype). Chromogranin also variably positive. If strongly NE, consider neuroendocrine mucinous variant."
+      },
+      {
+        "marker": "MUC2",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Secreted mucin; highlights the extracellular mucin pool. Not widely used in practice but confirms mucinous secretion."
+      },
+      {
+        "marker": "E-cadherin",
+        "role": "positive",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Retained (ductal phenotype). Helps exclude lobular carcinoma with secondary mucin accumulation."
+      },
+      {
+        "marker": "CK7",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Diffuse positive. Standard breast carcinoma profile."
+      },
+      {
+        "marker": "CK20",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative. CK20 positivity would raise concern for metastatic mucinous carcinoma from GI/appendix (check CDX2)."
+      },
+      {
+        "marker": "CDX2",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative in primary breast mucinous carcinoma. CDX2+ favours GI metastasis (esp. appendiceal)."
+      }
+    ]
+  },
+  {
+    "id": "breast-micropapillary-carcinoma",
+    "name": "Invasive Micropapillary Carcinoma of the Breast",
+    "category": "Breast",
+    "markers": [
+      {
+        "marker": "EMA / MUC1",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Shows reversed (inside-out) polarity — stains the outer surface of tumour clusters facing the stroma. This inverted EMA pattern is pathognomonic."
+      },
+      {
+        "marker": "ER",
+        "role": "positive",
+        "sensitivity": "~70%",
+        "specificity": "—",
+        "notes": "Usually ER+. HER2 amplification occurs in ~30%."
+      },
+      {
+        "marker": "HER2",
+        "role": "variable",
+        "sensitivity": "~30%",
+        "specificity": "—",
+        "notes": "Amplified in ~30% — higher rate than invasive NST. Assess per standard protocol."
+      },
+      {
+        "marker": "E-cadherin",
+        "role": "positive",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Retained; excludes lobular phenotype."
+      },
+      {
+        "marker": "D2-40 (Podoplanin)",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Highlights extensive lymphovascular invasion (LVI), which is characteristic and clinically significant in this subtype."
+      }
+    ]
+  },
+  {
+    "id": "breast-apocrine-carcinoma",
+    "name": "Apocrine Carcinoma of the Breast",
+    "category": "Breast",
+    "markers": [
+      {
+        "marker": "AR (Androgen Receptor)",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Strongly and diffusely positive. AR positivity in ER-negative breast carcinoma is a strong pointer to apocrine phenotype."
+      },
+      {
+        "marker": "ER",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative by definition (>90% apocrine morphology with ER−/PR−). ER positivity excludes pure apocrine classification."
+      },
+      {
+        "marker": "PR",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative."
+      },
+      {
+        "marker": "HER2",
+        "role": "variable",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "Amplified in ~50% of LAR (luminal androgen receptor) subtype. Always assess HER2 in apocrine carcinoma."
+      },
+      {
+        "marker": "GCDFP-15",
+        "role": "positive",
+        "sensitivity": "~70%",
+        "specificity": "—",
+        "notes": "Gross cystic disease fluid protein-15; classic apocrine marker. Also positive in Paget disease and salivary duct carcinoma."
+      },
+      {
+        "marker": "CK5/6",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative (despite triple-negative phenotype). Helps distinguish from metaplastic/basal-like carcinoma."
+      },
+      {
+        "marker": "GATA3",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "Usually positive; confirms breast lineage."
+      }
+    ]
+  },
+  {
+    "id": "breast-phyllodes-tumour",
+    "name": "Phyllodes Tumour of the Breast",
+    "category": "Breast",
+    "markers": [
+      {
+        "marker": "CD34",
+        "role": "positive",
+        "sensitivity": "~70%",
+        "specificity": "—",
+        "notes": "Positive in stromal component of benign/borderline phyllodes. CD34 expression decreases with increasing grade — often lost in malignant phyllodes."
+      },
+      {
+        "marker": "Ki-67",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Proliferation index in stroma correlates with grade. Benign: low; borderline: intermediate; malignant: high (>10 mitoses/10 HPF + high Ki-67)."
+      },
+      {
+        "marker": "SMA",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Variable in stromal cells. Helpful to confirm myofibroblastic differentiation in spindle cell areas."
+      },
+      {
+        "marker": "Desmin",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative in pure phyllodes stroma. Positivity in heterologous malignant element (rhabdomyosarcomatous differentiation)."
+      },
+      {
+        "marker": "p53",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Aberrant p53 expression increases with grade. Malignant phyllodes may show diffuse strong positivity."
+      },
+      {
+        "marker": "Epithelial markers (AE1/AE3, CK7)",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative in stroma; positive in epithelial component. Useful to confirm biphasic nature and exclude sarcoma or metaplastic carcinoma."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "MED12 mutation",
+        "notes": "Present in ~60–70% of fibroadenomas and phyllodes tumours. Not grade-specific."
+      },
+      {
+        "alteration": "TERT promoter mutation",
+        "notes": "Increases with grade: rare in benign, ~30% borderline, ~60% malignant. Strong predictor of malignant behaviour."
+      },
+      {
+        "alteration": "RARA / FLNA / SETD2 mutations",
+        "notes": "Associated with borderline and malignant phyllodes. SETD2 loss can show loss of H3K36me3 by IHC."
+      }
+    ]
+  },
+  {
+    "id": "breast-paget-disease",
+    "name": "Paget Disease of the Nipple",
+    "category": "Breast",
+    "markers": [
+      {
+        "marker": "HER2",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Strongly overexpressed (3+) in virtually all cases. HER2 IHC is the single most useful marker. The underlying DCIS/invasive carcinoma is also typically HER2+."
+      },
+      {
+        "marker": "CK7",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Highlights Paget cells within squamous epithelium. Key to distinguish from Toker cells (CK7+ but HER2−) and melanoma."
+      },
+      {
+        "marker": "CAM5.2",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Low-MW keratin; marks Paget cells. Use with CK7 for confirmation."
+      },
+      {
+        "marker": "GCDFP-15",
+        "role": "positive",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "Apocrine differentiation marker; positive in a subset."
+      },
+      {
+        "marker": "S100",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — critical to distinguish from pagetoid melanoma in situ (S100+, HMB45+, HER2−)."
+      },
+      {
+        "marker": "HMB45 / Melan-A",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — excludes melanocytic lesion."
+      },
+      {
+        "marker": "ER",
+        "role": "variable",
+        "sensitivity": "~30%",
+        "specificity": "—",
+        "notes": "Often negative in Paget cells themselves even when underlying carcinoma is ER+."
+      }
+    ]
+  },
+
+  // ── Haematopoietic / Lymphoid ────────────────────────────────────────────
+  {
+    "id": "lymphoma-mzl",
+    "name": "Marginal Zone Lymphoma (MALT / Splenic / Nodal)",
+    "category": "Lymphoma",
+    "markers": [
+      {
+        "marker": "CD20",
+        "role": "positive",
+        "sensitivity": "~99%",
+        "specificity": "—",
+        "notes": "Strongly positive. Mature B-cell marker."
+      },
+      {
+        "marker": "CD5",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — key to distinguish from CLL/SLL and MCL. Rare CD5+ MZL exists but is uncommon."
+      },
+      {
+        "marker": "CD10",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — distinguishes from follicular lymphoma and DLBCL GCB."
+      },
+      {
+        "marker": "BCL2",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "Usually positive but not by translocation (unlike FL). BCL2 t(14;18) negative."
+      },
+      {
+        "marker": "BCL6",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative in marginal zone cells (may be positive in admixed reactive follicles)."
+      },
+      {
+        "marker": "CD23",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — helps exclude CLL/SLL (CD23+). Follicular dendritic cell meshworks may retain CD23 in residual follicles."
+      },
+      {
+        "marker": "Cyclin D1",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — excludes MCL."
+      },
+      {
+        "marker": "IgD",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative in most MZL (positive in MCL and mantle zone B-cells)."
+      },
+      {
+        "marker": "CD43",
+        "role": "variable",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "Aberrant coexpression in ~50% of MALT lymphomas. Helpful when positive (mature B-cell with CD43 co-expression is abnormal)."
+      },
+      {
+        "marker": "IRTA1 / MNDA",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "high",
+        "notes": "IRTA1 (CD307a) and MNDA are relatively specific for MZL among mature B-cell lymphomas. Useful adjuncts to confirm MZL phenotype."
+      },
+      {
+        "marker": "κ/λ light chain (ISH)",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Light chain restriction confirms clonality. In situ hybridisation on FFPE preferred. MALT may have plasmacytic differentiation with cytoplasmic Ig."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "t(11;18)(q21;q21) API2::MALT1",
+        "notes": "Most common translocation in gastric and pulmonary MALT lymphoma (~20–40%). Associated with H. pylori-independent disease; predicts poor response to antibiotic eradication."
+      },
+      {
+        "alteration": "t(14;18)(q32;q21) IGH::MALT1",
+        "notes": "Ocular adnexa and liver MALT lymphoma. MALT1 rearrangement (different breakpoint from BCL2)."
+      },
+      {
+        "alteration": "t(3;14)(p14;q32) FOXP1::IGH",
+        "notes": "Thyroid and ocular MALT; associated with more aggressive behaviour."
+      },
+      {
+        "alteration": "del(7q) — splenic MZL",
+        "notes": "Deletion of 7q is characteristic of splenic MZL (~40%). Not seen in MALT or nodal MZL."
+      }
+    ]
+  },
+  {
+    "id": "lymphoma-hgbl",
+    "name": "High-Grade B-Cell Lymphoma (HGBL, Double-Hit / Triple-Hit)",
+    "category": "Lymphoma",
+    "markers": [
+      {
+        "marker": "CD20",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Strong B-cell marker. Rare CD20-dim or negative cases."
+      },
+      {
+        "marker": "BCL2",
+        "role": "positive",
+        "sensitivity": "~85%",
+        "specificity": "—",
+        "notes": "Strongly positive by protein expression in most HGBL. Reflects BCL2 gene rearrangement and/or amplification. IHC alone does not confirm rearrangement — FISH required."
+      },
+      {
+        "marker": "BCL6",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Positive (GCB phenotype). BCL6 rearrangement in ~30% of DLBCL and may co-occur with MYC in triple-hit."
+      },
+      {
+        "marker": "MYC (IHC)",
+        "role": "positive",
+        "sensitivity": "~60%",
+        "specificity": "—",
+        "notes": "MYC protein >40% by IHC is a screen for MYC rearrangement/amplification. IHC is not a substitute for FISH — MYC IHC has poor specificity; confirm with FISH if suspected HGBL."
+      },
+      {
+        "marker": "CD10",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "GCB subtype marker. HGBL-with-MYC-and-BCL2 is almost always GCB."
+      },
+      {
+        "marker": "Ki-67",
+        "role": "positive",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Very high proliferation index, typically >90%. Near 100% in Burkitt-like morphology cases."
+      },
+      {
+        "marker": "TdT",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — excludes B-ALL/LBL. Critical when blastic morphology present."
+      },
+      {
+        "marker": "MUM1 / IRF4",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Usually negative (GCB phenotype). Positive MUM1 would suggest ABC/non-GCB DLBCL rather than HGBL."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "MYC rearrangement (FISH)",
+        "notes": "Required for HGBL diagnosis. Partners: IGH (50%), non-IG loci. MYC rearrangement alone = DLBCL or Burkitt; concurrent BCL2/BCL6 rearrangement = HGBL."
+      },
+      {
+        "alteration": "BCL2 rearrangement + MYC — double-hit",
+        "notes": "~5–10% of large B-cell lymphomas. Highly aggressive; standard R-CHOP inferior — clinical trials prefer DA-EPOCH-R or similar intensified regimens."
+      },
+      {
+        "alteration": "BCL6 rearrangement + MYC (± BCL2) — triple-hit",
+        "notes": "Rarest subtype. Worse prognosis than double-hit."
+      }
+    ]
+  },
+  {
+    "id": "lymphoma-nlpbl",
+    "name": "Nodular Lymphocyte-Predominant B-Cell Lymphoma (NLPBL)",
+    "category": "Lymphoma",
+    "markers": [
+      {
+        "marker": "CD20",
+        "role": "positive",
+        "sensitivity": "~99%",
+        "specificity": "—",
+        "notes": "Strongly positive in LP (lymphocyte-predominant / 'popcorn') cells. Key difference from classical Hodgkin Reed-Sternberg cells (CD20−/dim)."
+      },
+      {
+        "marker": "CD45 (LCA)",
+        "role": "positive",
+        "sensitivity": "~99%",
+        "specificity": "—",
+        "notes": "Strongly positive in LP cells — unlike RS cells in cHL which are CD45−."
+      },
+      {
+        "marker": "OCT2",
+        "role": "positive",
+        "sensitivity": "~99%",
+        "specificity": "—",
+        "notes": "Strongly positive with BOB1. OCT2+/BOB1+ co-expression distinguishes NLPBL from cHL (where one or both are usually lost)."
+      },
+      {
+        "marker": "BOB1",
+        "role": "positive",
+        "sensitivity": "~99%",
+        "specificity": "—",
+        "notes": "Strongly positive. See OCT2 note."
+      },
+      {
+        "marker": "CD30",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative in LP cells — critical distinction from cHL (CD30+) and ALCL (CD30+). Rare weak focal CD30 possible in NLPBL transformation."
+      },
+      {
+        "marker": "CD15",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative. CD15+ in RS cells of cHL."
+      },
+      {
+        "marker": "EBV (EBER ISH)",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative in LP cells — unlike EBV+ cHL subtypes (mixed cellularity, lymphocyte depleted). EBV− supports NLPBL."
+      },
+      {
+        "marker": "PD-L1",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "LP cells negative. Background reactive T-cells may express PD-1, and are often CD57+/PD-1+ rosetting around LP cells — a diagnostic clue."
+      },
+      {
+        "marker": "CD57 (background T-cells)",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "CD57+ T-cells form rosettes around LP cells — a characteristic low-power finding helpful in diagnosis."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "BCL6 rearrangement",
+        "notes": "~50% of cases. Common partner: IGH. Not diagnostic on its own."
+      },
+      {
+        "alteration": "TNFRSF14 / SGK1 / JUNB mutations",
+        "notes": "Recurrently mutated in NLPBL. TNFRSF14 mutation also seen in some FL cases — highlights biologic relationship."
+      }
+    ]
+  },
+  {
+    "id": "lymphoma-t-all",
+    "name": "T-Lymphoblastic Leukaemia / Lymphoma (T-ALL / ETP-ALL)",
+    "category": "Lymphoma",
+    "markers": [
+      {
+        "marker": "TdT",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Nuclear TdT is the hallmark of lymphoblastic neoplasms. Positive in both T-ALL and B-ALL; absent in mature T-cell lymphomas."
+      },
+      {
+        "marker": "CD3 (cytoplasmic)",
+        "role": "positive",
+        "sensitivity": "~99%",
+        "specificity": "high",
+        "notes": "Cytoplasmic CD3 (cCD3) is the most specific T-lineage marker at precursor stage — surface CD3 may be negative. Use anti-CD3 clone that detects cytoplasmic epsilon chain (e.g. polyclonal or CD3ε)."
+      },
+      {
+        "marker": "CD7",
+        "role": "positive",
+        "sensitivity": "~99%",
+        "specificity": "—",
+        "notes": "Earliest T-cell antigen to be expressed. Nearly always positive."
+      },
+      {
+        "marker": "CD2",
+        "role": "positive",
+        "sensitivity": "~85%",
+        "specificity": "—",
+        "notes": "Variable; expressed at early cortical thymic stage."
+      },
+      {
+        "marker": "CD5",
+        "role": "positive",
+        "sensitivity": "~75%",
+        "specificity": "—",
+        "notes": "Variable positivity."
+      },
+      {
+        "marker": "CD1a",
+        "role": "variable",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "Positive in cortical (common) T-ALL; negative in early T-precursor (ETP) and mature subtypes."
+      },
+      {
+        "marker": "CD4 / CD8",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Double-positive (CD4+/CD8+) in cortical T-ALL. Double-negative in ETP-ALL and pro-T phenotype."
+      },
+      {
+        "marker": "CD34",
+        "role": "variable",
+        "sensitivity": "~30%",
+        "specificity": "—",
+        "notes": "Positive in immature/ETP-ALL. ETP-ALL: CD34+, CD117+, weak/absent CD1a and CD8."
+      },
+      {
+        "marker": "CD117 (c-KIT)",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Characteristic of ETP-ALL along with myeloid marker co-expression (CD13, CD33, CD11b). ETP-ALL is defined by stem cell/myeloid immunophenotype with T-lineage commitment (cCD3+)."
+      },
+      {
+        "marker": "MPO",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative. Positivity would indicate AML or mixed phenotype acute leukaemia (MPAL)."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "NOTCH1 mutation",
+        "notes": ">60% of T-ALL. Activating mutations in HD or PEST domain. Better prognosis in some studies; gamma-secretase inhibitors investigational."
+      },
+      {
+        "alteration": "ETP-ALL: FLT3, NRAS/KRAS, DNMT3A mutations",
+        "notes": "ETP-ALL has myeloid-like mutation profile. FLT3-ITD present in ~20%; potentially targetable. High-risk disease with standard protocols."
+      },
+      {
+        "alteration": "TLX1 / TLX3 / TAL1 / LMO2 overexpression",
+        "notes": "Transcription factor dysregulation defines molecular subtypes. TLX1+ has better prognosis; TAL1/LMO2 co-activation common in cortical T-ALL."
+      }
+    ]
+  },
+  {
+    "id": "lymphoma-lch",
+    "name": "Langerhans Cell Histiocytosis (LCH)",
+    "category": "Lymphoma",
+    "markers": [
+      {
+        "marker": "CD1a",
+        "role": "positive",
+        "sensitivity": "~99%",
+        "specificity": "high",
+        "notes": "Strongly and diffusely positive. Best diagnostic marker — strongly positive membranous staining."
+      },
+      {
+        "marker": "CD207 (Langerin)",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "high",
+        "notes": "Highly specific for Langerhans cells. Reflects Birbeck granule protein. More specific than CD1a (positive in Langerhans cells only, not other histiocytes)."
+      },
+      {
+        "marker": "S100",
+        "role": "positive",
+        "sensitivity": "~99%",
+        "specificity": "low",
+        "notes": "Strongly positive. Non-specific (also positive in melanoma, nerve sheath tumours, etc.) but confirms histiocytic/dendritic lineage."
+      },
+      {
+        "marker": "CD68",
+        "role": "variable",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "Variably positive. Not specific for LCH — present in most histiocytic lesions."
+      },
+      {
+        "marker": "BRAF V600E (IHC)",
+        "role": "variable",
+        "sensitivity": "~55%",
+        "specificity": "high",
+        "notes": "Positive IHC (clone VE1) in ~55% of LCH. Corresponds to BRAF V600E mutation; supports targeted therapy eligibility (vemurafenib/dabrafenib). BRAF IHC negative does not exclude LCH."
+      },
+      {
+        "marker": "CD45 (LCA)",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "Positive, confirming haematopoietic origin."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "BRAF V600E mutation",
+        "notes": "~55% of LCH. Defines 'ERK pathway disease'. BRAF inhibitors (vemurafenib, dabrafenib) effective in BRAF V600E+ high-risk/refractory LCH."
+      },
+      {
+        "alteration": "MAP2K1 (MEK1) mutation",
+        "notes": "~20% of BRAF-wildtype LCH. Alternative ERK pathway activation. MEK inhibitors (trametinib) potentially active."
+      },
+      {
+        "alteration": "ARAF / RAF1 / NRAS mutations",
+        "notes": "Less frequent MAPK pathway alterations in BRAF/MAP2K1-wildtype cases. LCH is now considered a clonal neoplasm of myeloid origin."
+      }
+    ]
+  },
+  {
+    "id": "lymphoma-erdheim-chester",
+    "name": "Erdheim-Chester Disease (ECD)",
+    "category": "Lymphoma",
+    "markers": [
+      {
+        "marker": "CD68",
+        "role": "positive",
+        "sensitivity": "~99%",
+        "specificity": "—",
+        "notes": "Strongly positive in foamy histiocytes. CD68 (PGM1 and KP1 clones) mark histiocytic lineage."
+      },
+      {
+        "marker": "CD163",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Positive; marks M2-like histiocytes. More specific than CD68 for non-Langerhans histiocytes."
+      },
+      {
+        "marker": "CD1a",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "high",
+        "notes": "Negative — critical distinction from LCH. CD1a negativity confirms non-Langerhans histiocytosis."
+      },
+      {
+        "marker": "CD207 (Langerin)",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "high",
+        "notes": "Negative — further excludes LCH."
+      },
+      {
+        "marker": "S100",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Typically negative (unlike LCH which is strongly S100+). Occasional weak focal positivity possible."
+      },
+      {
+        "marker": "BRAF V600E (IHC)",
+        "role": "positive",
+        "sensitivity": "~55%",
+        "specificity": "high",
+        "notes": "Positive in ~55% of ECD (same rate as LCH). Supports BRAF V600E mutation and targeted therapy eligibility. ECD and LCH share the same MAPK pathway driver landscape."
+      },
+      {
+        "marker": "Fascin",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative in ECD (positive in follicular dendritic cell sarcoma and interdigitating dendritic cell sarcoma)."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "BRAF V600E mutation",
+        "notes": "~55% of ECD. Vemurafenib/dabrafenib approved for BRAF V600E+ ECD (FDA 2017). BRAF V600E testing is mandatory in all ECD cases."
+      },
+      {
+        "alteration": "MAP2K1 / NRAS / KRAS / PIK3CA mutations",
+        "notes": "Alternative MAPK/PI3K pathway mutations in BRAF-wildtype ECD. MEK inhibitors (cobimetinib, trametinib) active in BRAF-wildtype MAPK-mutant ECD."
+      }
+    ]
+  },
+  {
+    "id": "lymphoma-rosai-dorfman",
+    "name": "Rosai-Dorfman Disease (RDD)",
+    "category": "Lymphoma",
+    "markers": [
+      {
+        "marker": "S100",
+        "role": "positive",
+        "sensitivity": "~99%",
+        "specificity": "—",
+        "notes": "Strongly and diffusely positive in large histiocytes — key diagnostic marker. Highlights the characteristic emperipolesis (lymphocytes within histiocyte cytoplasm)."
+      },
+      {
+        "marker": "CD68",
+        "role": "positive",
+        "sensitivity": "~99%",
+        "specificity": "—",
+        "notes": "Strongly positive. Confirms histiocytic lineage."
+      },
+      {
+        "marker": "CD163",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Positive; M2-type histiocyte marker."
+      },
+      {
+        "marker": "CD1a",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "high",
+        "notes": "Negative — distinguishes from LCH. S100+/CD1a− is the classic RDD profile."
+      },
+      {
+        "marker": "CD207 (Langerin)",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "high",
+        "notes": "Negative."
+      },
+      {
+        "marker": "Cyclin D1",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative in RDD histiocytes — useful to exclude nodular sclerosing fibrous patterns seen in some spindle cell lesions."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "SLC29A3 / KRAS / MAP2K1 mutations (IgG4-related / MAPK RDD)",
+        "notes": "SLC29A3 mutations in familial H syndrome/Faisalabad histiocytosis. Sporadic RDD may have KRAS or MAP2K1 mutations (~20%). These are not diagnostic IHC markers but confirm clonal neoplastic nature."
+      },
+      {
+        "alteration": "ALK rearrangement (rare)",
+        "notes": "ALK+ RDD has been reported. ALK IHC should be tested if atypical morphology."
+      }
+    ]
+  },
+  {
+    "id": "lymphoma-fdcs",
+    "name": "Follicular Dendritic Cell Sarcoma (FDCS)",
+    "category": "Lymphoma",
+    "markers": [
+      {
+        "marker": "CD21",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "high",
+        "notes": "Strongly positive — the single most specific marker. CD21 marks follicular dendritic cells in germinal centres. Membranous and cytoplasmic pattern."
+      },
+      {
+        "marker": "CD23",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "Positive. Use with CD21 and CD35 as a panel."
+      },
+      {
+        "marker": "CD35",
+        "role": "positive",
+        "sensitivity": "~85%",
+        "specificity": "—",
+        "notes": "Complement receptor 1; marks FDCs. Combine CD21+CD23+CD35 for maximum sensitivity."
+      },
+      {
+        "marker": "Clusterin",
+        "role": "positive",
+        "sensitivity": "~85%",
+        "specificity": "—",
+        "notes": "Positive in FDCS; useful adjunct, especially in poorly differentiated cases where CD21/CD35 may be weak."
+      },
+      {
+        "marker": "CXCL13",
+        "role": "positive",
+        "sensitivity": "~70%",
+        "specificity": "—",
+        "notes": "Positive in FDC meshworks and FDCS."
+      },
+      {
+        "marker": "D2-40",
+        "role": "variable",
+        "sensitivity": "~40%",
+        "specificity": "—",
+        "notes": "Variable positivity; may cause confusion with lymphatic/vascular tumours."
+      },
+      {
+        "marker": "S100",
+        "role": "variable",
+        "sensitivity": "~30%",
+        "specificity": "—",
+        "notes": "Focally positive in a minority — if strong diffuse S100 present, favour interdigitating dendritic cell sarcoma instead."
+      },
+      {
+        "marker": "EBV (EBER ISH)",
+        "role": "variable",
+        "sensitivity": "~15%",
+        "specificity": "—",
+        "notes": "Positive in ~15% of FDCS, particularly the inflammatory pseudotumour-like variant (inflammatory FDCS, often EBV+)."
+      },
+      {
+        "marker": "Cytokeratins",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — excludes carcinoma. Can be a pitfall in spindled carcinomas."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "CDKN2A deletion / TP53 mutation",
+        "notes": "Common in FDCS. No recurrent pathognomonic translocation."
+      },
+      {
+        "alteration": "EBV association (inflammatory variant)",
+        "notes": "The inflammatory pseudotumour-like variant of FDCS is consistently EBV+ and occurs predominantly in the liver and spleen."
+      }
+    ]
+  },
+  {
+    "id": "lymphoma-histiocytic-sarcoma",
+    "name": "Histiocytic Sarcoma",
+    "category": "Lymphoma",
+    "markers": [
+      {
+        "marker": "CD68",
+        "role": "positive",
+        "sensitivity": "~99%",
+        "specificity": "—",
+        "notes": "Strongly positive — required for diagnosis. KP1 and PGM1 clones both useful."
+      },
+      {
+        "marker": "CD163",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Strongly positive; more specific for monocyte/macrophage lineage than CD68."
+      },
+      {
+        "marker": "Lysozyme",
+        "role": "positive",
+        "sensitivity": "~75%",
+        "specificity": "—",
+        "notes": "Classic histiocytic marker. Supports macrophage lineage."
+      },
+      {
+        "marker": "S100",
+        "role": "variable",
+        "sensitivity": "~30%",
+        "specificity": "—",
+        "notes": "Focally positive in a minority. Strong diffuse S100 favours interdigitating dendritic cell sarcoma."
+      },
+      {
+        "marker": "CD1a",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "high",
+        "notes": "Negative — excludes LCH."
+      },
+      {
+        "marker": "CD21 / CD23 / CD35",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "high",
+        "notes": "Negative — excludes FDCS."
+      },
+      {
+        "marker": "CD20 / CD3 / CD30",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative for B, T, and NK-cell lineage markers. Lineage exclusion is essential. CD30 may be focally positive — does not indicate ALCL if other T-cell markers absent."
+      },
+      {
+        "marker": "MPO",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — excludes AML with monocytic differentiation (which can mimic histiocytic sarcoma morphologically)."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "BRAF V600E mutation",
+        "notes": "Present in ~30% of histiocytic sarcoma — targetable. IHC (VE1 clone) as screen."
+      },
+      {
+        "alteration": "CDKN2A deletion / MAP2K1 / TP53 mutations",
+        "notes": "Common secondary alterations. Some histiocytic sarcomas arise by transdifferentiation from follicular lymphoma (IGH::BCL2 detectable)."
+      }
+    ]
+  },
+  {
+    "id": "lymphoma-mastocytosis",
+    "name": "Systemic Mastocytosis",
+    "category": "Lymphoma",
+    "markers": [
+      {
+        "marker": "CD117 (c-KIT)",
+        "role": "positive",
+        "sensitivity": "~99%",
+        "specificity": "—",
+        "notes": "Strongly and diffusely positive in mast cells. CD117 is the most sensitive marker. Neoplastic mast cells often form compact aggregates — unlike normal scattered tissue mast cells."
+      },
+      {
+        "marker": "Tryptase",
+        "role": "positive",
+        "sensitivity": "~99%",
+        "specificity": "high",
+        "notes": "Mast cell-specific serine protease. Highly specific; marks mast cells in tissue and is elevated in serum. Required criterion for mast cell aggregate detection."
+      },
+      {
+        "marker": "CD25",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "high",
+        "notes": "Aberrant CD25 expression on neoplastic mast cells is a minor WHO diagnostic criterion for systemic mastocytosis. Normal tissue mast cells are CD25−."
+      },
+      {
+        "marker": "CD2",
+        "role": "variable",
+        "sensitivity": "~75%",
+        "specificity": "—",
+        "notes": "Aberrant CD2 (T-cell antigen) on mast cells is another WHO minor criterion. Use with CD25 — co-expression strongly supports SM diagnosis."
+      },
+      {
+        "marker": "CD30",
+        "role": "variable",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "Positive in a subset, especially advanced SM. CD30+ mastocytosis associated with aggressive variants. Not a diagnostic criterion."
+      },
+      {
+        "marker": "CD45",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Positive, confirming haematopoietic lineage."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "KIT D816V point mutation",
+        "notes": "Present in >95% of systemic mastocytosis. The WHO major criterion for SM. Resistant to imatinib; sensitive to avapritinib (BLU-285) — FDA-approved for advanced SM."
+      },
+      {
+        "alteration": "TET2 / SRSF2 / ASXL1 mutations",
+        "notes": "'Triple-positive' (KIT D816V + TET2 + SRSF2/ASXL1) confers highest risk of progression to aggressive SM / mast cell leukaemia."
+      }
+    ]
+  },
+  {
+    "id": "lymphoma-apl",
+    "name": "Acute Promyelocytic Leukaemia (APL) — PML::RARA",
+    "category": "Lymphoma",
+    "markers": [
+      {
+        "marker": "MPO",
+        "role": "positive",
+        "sensitivity": "~99%",
+        "specificity": "—",
+        "notes": "Intensely and diffusely positive — strongest MPO of any AML subtype. Reflects abundant azurophilic granules and Auer rods."
+      },
+      {
+        "marker": "CD33",
+        "role": "positive",
+        "sensitivity": "~99%",
+        "specificity": "—",
+        "notes": "Strongly positive. Pan-myeloid marker."
+      },
+      {
+        "marker": "CD13",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Positive, often with heterogeneous intensity."
+      },
+      {
+        "marker": "HLA-DR",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "high",
+        "notes": "Characteristically negative — unusual for AML. HLA-DR negativity with CD33/CD13 positivity and strong MPO in an AML is a strong clue to APL."
+      },
+      {
+        "marker": "CD34",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Typically negative (unlike most AML). Hypogranular (M3v) variant may show dimly positive CD34."
+      },
+      {
+        "marker": "CD117 (c-KIT)",
+        "role": "variable",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "Variable CD117 expression."
+      },
+      {
+        "marker": "PML (nuclear body pattern)",
+        "role": "screen",
+        "sensitivity": "~90%",
+        "specificity": "high",
+        "notes": "Anti-PML IHC shows disrupted nuclear dot pattern (microgranular/diffuse) in PML::RARA+ APL vs. intact nuclear dots in normal cells/other AML. Rapid screening tool on bone marrow trephine pending cytogenetics."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "t(15;17)(q24;q21) PML::RARA",
+        "notes": "Defining translocation present in ~98% of APL. Confirmed by RT-PCR or FISH. Drives differentiation block. ATRA + arsenic trioxide targets PML::RARA for degradation — highly curative (OS >90%)."
+      },
+      {
+        "alteration": "Variant RARA fusions (ZBTB16, NPM1, STAT5B, others)",
+        "notes": "~2% of APL-like disease. ZBTB16::RARA may not respond to ATRA. Always confirm RARA involvement by FISH in morphological APL."
+      }
+    ]
+  },
+
+  // ── Gynaecologic (additional subtypes) ──────────────────────────────────
+  {
+    "id": "gynae-carcinosarcoma",
+    "name": "Uterine Carcinosarcoma (MMMT)",
+    "category": "Gynaecologic",
+    "markers": [
+      {
+        "marker": "CK7",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Marks carcinomatous epithelial component. Sarcomatous component may lose keratins."
+      },
+      {
+        "marker": "PAX8",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "Positive in epithelial component, confirming Müllerian lineage. May be focally retained in sarcomatous component."
+      },
+      {
+        "marker": "ER",
+        "role": "variable",
+        "sensitivity": "~40%",
+        "specificity": "—",
+        "notes": "Variable in epithelial component depending on carcinoma type (serous-like = ER−; endometrioid-like = ER+)."
+      },
+      {
+        "marker": "p53",
+        "role": "variable",
+        "sensitivity": "~70%",
+        "specificity": "—",
+        "notes": "Aberrant p53 (strong diffuse or null) in majority, reflecting p53 mutation — most MMMT behave like high-grade serous. Concordant p53 in both components supports monoclonal (carcinomatous) origin."
+      },
+      {
+        "marker": "Vimentin",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Highlights mesenchymal/sarcomatous component. Dual keratin+/vimentin+ areas indicate spindled carcinoma."
+      },
+      {
+        "marker": "Desmin / SMA",
+        "role": "variable",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "Positive in homologous sarcomatous component (leiomyosarcoma-like areas). Heterologous elements: rhabdomyoblasts (desmin/myogenin+), chondrosarcoma (S100+)."
+      },
+      {
+        "marker": "MLH1 / PMS2 / MSH2 / MSH6",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "MMR IHC recommended in all uterine carcinosarcomas — ~15–20% show MMR deficiency. MLH1 loss usually due to promoter hypermethylation."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "TP53 mutation",
+        "notes": "Most common mutation (~90%) — supports clonal origin from carcinoma (not true carcinosarcoma). Uterine MMMT is now classified as a dedifferentiated/metaplastic carcinoma."
+      },
+      {
+        "alteration": "POLE mutation (ultra-mutated)",
+        "notes": "~5% of MMMT. Excellent prognosis (as with POLE-mutated endometrial carcinoma). Check POLE exonuclease domain mutations."
+      }
+    ]
+  },
+  {
+    "id": "gynae-undifferentiated-endometrial-carcinoma",
+    "name": "Undifferentiated / Dedifferentiated Endometrial Carcinoma",
+    "category": "Gynaecologic",
+    "markers": [
+      {
+        "marker": "PAX8",
+        "role": "positive",
+        "sensitivity": "~70%",
+        "specificity": "—",
+        "notes": "Retained in most cases, confirming Müllerian lineage. May be lost in deeply undifferentiated areas."
+      },
+      {
+        "marker": "SMARCA4 (BRG1)",
+        "role": "loss",
+        "sensitivity": "~30%",
+        "specificity": "high",
+        "notes": "Loss of SMARCA4 expression in a subset (SMARCA4-deficient undifferentiated carcinoma). Clinically aggressive; associated with young women and hypercalcaemia (overlap with SCCOHT)."
+      },
+      {
+        "marker": "SMARCB1 (INI1)",
+        "role": "loss",
+        "sensitivity": "~20%",
+        "specificity": "high",
+        "notes": "Loss of SMARCB1/INI1 in a subset. SWI/SNF complex deficiency is a unifying theme — test both SMARCA4 and SMARCB1."
+      },
+      {
+        "marker": "ER",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative in undifferentiated component. Retained ER in the low-grade endometrioid component of dedifferentiated carcinoma."
+      },
+      {
+        "marker": "E-cadherin",
+        "role": "loss",
+        "sensitivity": "~60%",
+        "specificity": "—",
+        "notes": "Loss of E-cadherin in undifferentiated component (not diagnostic alone but characteristic). Intact in the well-differentiated component of dedifferentiated carcinoma."
+      },
+      {
+        "marker": "CK7 / EMA",
+        "role": "variable",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "Reduced or focal expression in undifferentiated component — epithelial markers are often weak/lost. This is a diagnostic pitfall (can mimic lymphoma or sarcoma)."
+      },
+      {
+        "marker": "CD45 / lymphoid markers",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — excludes lymphoma, which is in the differential when keratins are lost."
+      },
+      {
+        "marker": "MLH1 / PMS2 / MSH2 / MSH6",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "~50–60% show MMR deficiency. MLH1 loss most common. Screen all cases."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "SMARCA4 or SMARCB1 loss (SWI/SNF complex)",
+        "notes": "Subgroup-defining. Clinically aggressive; no targeted therapy approved. Overlap with ovarian SCCOHT (SMARCA4) and rhabdoid tumours (SMARCB1)."
+      },
+      {
+        "alteration": "MLH1 promoter hypermethylation (MSI-H)",
+        "notes": "~50% of undifferentiated endometrial carcinomas. MSI-H supports pembrolizumab eligibility."
+      }
+    ]
+  },
+  {
+    "id": "ovarian-lgsc",
+    "name": "Ovarian Low-Grade Serous Carcinoma (LGSC)",
+    "category": "Gynaecologic",
+    "markers": [
+      {
+        "marker": "WT1",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Strongly positive. Shared with HGSC — does not distinguish LG from HG serous. Confirms serous Müllerian lineage."
+      },
+      {
+        "marker": "ER",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "Positive; more consistently positive than HGSC. ER positivity supports LGSC in the differential with borderline serous tumour."
+      },
+      {
+        "marker": "p53",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "high",
+        "notes": "Wildtype (heterogeneous, low-level) staining — key distinction from HGSC. HGSC shows aberrant p53 (diffuse strong or null) in ~96%. Wildtype p53 in a serous carcinoma strongly supports LGSC."
+      },
+      {
+        "marker": "PAX8",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Positive; confirms Müllerian lineage."
+      },
+      {
+        "marker": "CK7",
+        "role": "positive",
+        "sensitivity": "~99%",
+        "specificity": "—",
+        "notes": "Diffuse positive."
+      },
+      {
+        "marker": "Ki-67",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Low proliferation index (<10% typical) — helps differentiate from HGSC (usually >50%). Not diagnostic alone."
+      },
+      {
+        "marker": "HER2",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Not amplified. Unlike HGSC which may have HER2 amplification."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "KRAS or BRAF V600E mutation",
+        "notes": "~50–60% of LGSC. KRAS (most common) or BRAF mutations drive the indolent low-grade biology. BRAF inhibitors may have activity. MEK inhibitor binimetinib has shown activity in KRAS/BRAF-mutated LGSC."
+      },
+      {
+        "alteration": "NRAS mutation",
+        "notes": "~10% of LGSC, mutually exclusive with KRAS/BRAF."
+      }
+    ]
+  },
+  {
+    "id": "ovarian-mucinous-carcinoma",
+    "name": "Ovarian Mucinous Carcinoma",
+    "category": "Gynaecologic",
+    "markers": [
+      {
+        "marker": "CK7",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Positive. CK7+/CK20 variable pattern."
+      },
+      {
+        "marker": "CK20",
+        "role": "variable",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "Variable — may be CK7+/CK20+ mimicking colorectal or appendiceal primary. Context critical."
+      },
+      {
+        "marker": "CDX2",
+        "role": "variable",
+        "sensitivity": "~40%",
+        "specificity": "—",
+        "notes": "Focally positive in a minority. Strong diffuse CDX2 favours metastatic appendiceal/colorectal primary."
+      },
+      {
+        "marker": "PAX8",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "high",
+        "notes": "Negative or only focally positive — unlike other ovarian carcinoma types. PAX8 negativity in an ovarian carcinoma is a clue to mucinous type or metastasis from GI/pancreatic tract."
+      },
+      {
+        "marker": "WT1",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "high",
+        "notes": "Negative — serous marker. WT1 positivity argues against mucinous primary."
+      },
+      {
+        "marker": "DPC4 / SMAD4",
+        "role": "positive",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Retained in primary ovarian mucinous carcinoma. Loss (~55%) strongly suggests pancreatic origin."
+      },
+      {
+        "marker": "HER2",
+        "role": "variable",
+        "sensitivity": "~18%",
+        "specificity": "—",
+        "notes": "Amplified in ~18% of primary ovarian mucinous carcinoma — assess by standard IHC/ISH. Potential therapeutic target."
+      },
+      {
+        "marker": "CA125 / MUC16",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Usually negative (unlike serous carcinoma). Serum CA125 often not elevated in mucinous ovarian carcinoma."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "KRAS mutation",
+        "notes": "~75% of ovarian mucinous carcinomas. Also present in borderline mucinous tumours — part of the adenoma-carcinoma sequence in mucinous lineage."
+      },
+      {
+        "alteration": "HER2 amplification",
+        "notes": "~18% — potentially targetable. Higher rate in high-grade mucinous carcinoma."
+      }
+    ]
+  },
+  {
+    "id": "ovarian-endometrioid-carcinoma",
+    "name": "Ovarian Endometrioid Carcinoma",
+    "category": "Gynaecologic",
+    "markers": [
+      {
+        "marker": "ER",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "Positive — shared with endometrial primary. Cannot distinguish ovarian from endometrial endometrioid by IHC alone; clinical correlation and imaging required."
+      },
+      {
+        "marker": "PR",
+        "role": "positive",
+        "sensitivity": "~70%",
+        "specificity": "—",
+        "notes": "Usually positive."
+      },
+      {
+        "marker": "PAX8",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Positive; confirms Müllerian origin."
+      },
+      {
+        "marker": "CK7",
+        "role": "positive",
+        "sensitivity": "~99%",
+        "specificity": "—",
+        "notes": "Diffuse positive."
+      },
+      {
+        "marker": "WT1",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "high",
+        "notes": "Typically negative — distinguishes from serous carcinoma (WT1+). A small subset (~15%) may be focally WT1+."
+      },
+      {
+        "marker": "p53",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Wildtype in low-grade; may be aberrant in high-grade (grade 3) endometrioid — overlap with HGSC increases at grade 3."
+      },
+      {
+        "marker": "ARID1A",
+        "role": "loss",
+        "sensitivity": "~40%",
+        "specificity": "—",
+        "notes": "Loss of ARID1A expression in ~40% (IHC for ARID1A protein, clone EPR1323Y). ARID1A loss is also common in endometriosis-associated clear cell carcinoma."
+      },
+      {
+        "marker": "MLH1 / PMS2 / MSH2 / MSH6",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "~10–15% show MMR deficiency. MLH1 loss most common. Screen for Lynch syndrome implications."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "CTNNB1 (β-catenin) mutation / nuclear accumulation",
+        "notes": "~50% of ovarian endometrioid carcinoma. Nuclear β-catenin IHC (clone 14) confirms exon 3 mutation. Associated with squamous morule formation."
+      },
+      {
+        "alteration": "ARID1A mutation",
+        "notes": "~40%. Also associated with synchronous/metachronous endometriosis. May co-occur with PI3K pathway mutations."
+      },
+      {
+        "alteration": "PIK3CA / PTEN mutations",
+        "notes": "Common (~30%). Overlapping mutation landscape with endometrial endometrioid carcinoma."
+      }
+    ]
+  },
+  {
+    "id": "cervical-nec",
+    "name": "Neuroendocrine Carcinoma of the Cervix",
+    "category": "Gynaecologic",
+    "markers": [
+      {
+        "marker": "Synaptophysin",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Strongly positive — primary NE marker. Use with chromogranin A."
+      },
+      {
+        "marker": "Chromogranin A",
+        "role": "positive",
+        "sensitivity": "~85%",
+        "specificity": "—",
+        "notes": "Positive; may be focal."
+      },
+      {
+        "marker": "CD56",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Positive. Less specific than Syn/CgA."
+      },
+      {
+        "marker": "TTF-1",
+        "role": "positive",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "Positive in ~50% of cervical SCNEC — does NOT indicate pulmonary origin. TTF-1 is NOT site-specific for small cell NEC outside the lung context."
+      },
+      {
+        "marker": "p16",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Diffuse block-positive p16 — reflects high-risk HPV (usually HPV18) integration. Virtually all cervical NEC are HPV-associated."
+      },
+      {
+        "marker": "CK7",
+        "role": "positive",
+        "sensitivity": "~70%",
+        "specificity": "—",
+        "notes": "Focal to moderate positivity; confirms epithelial/carcinomatous nature."
+      },
+      {
+        "marker": "Ki-67",
+        "role": "positive",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Very high, typically >80% — distinguishes NEC from well-differentiated NET (Ki-67 <20%)."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "High-risk HPV (predominantly HPV18)",
+        "notes": "~95% HPV-associated, mostly HPV18 (unlike squamous cell carcinoma which is predominantly HPV16). HPV18 is associated with glandular and NE differentiation of cervix."
+      },
+      {
+        "alteration": "RB1 deletion / TP53 mutation",
+        "notes": "Common secondary alterations, as in pulmonary SCLC. RB1 loss by IHC (absent nuclear staining) supports NEC over poorly differentiated squamous carcinoma."
+      }
+    ]
+  },
+  {
+    "id": "vulvar-scc",
+    "name": "Vulvar Squamous Cell Carcinoma",
+    "category": "Gynaecologic",
+    "markers": [
+      {
+        "marker": "p16",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Two distinct pathways: HPV-associated (p16 diffuse block-positive, ~30%) arising from uVIN/HSIL, and HPV-independent (p16 negative/patchy, ~70%) arising from dVIN/lichen sclerosus. p16 guides aetiology, not just diagnosis."
+      },
+      {
+        "marker": "p53",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Aberrant p53 (diffuse strong or null) in HPV-independent pathway (~70%). Wildtype p53 in HPV-associated disease. Aberrant p53 in a vulvar SCC strongly suggests HPV-independent origin with dVIN precursor."
+      },
+      {
+        "marker": "p40",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Confirms squamous lineage. Use with p63 — both positive in SCC."
+      },
+      {
+        "marker": "CK5/6",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Supports squamous differentiation."
+      },
+      {
+        "marker": "Ki-67",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "High proliferation in invasive component. Used to assess depth of invasion at the tumour–stroma interface."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "High-risk HPV (predominantly HPV16) — HPV pathway",
+        "notes": "~30% of vulvar SCC. Arises from uVIN (HSIL). Better prognosis than HPV-independent SCC. p16 block-positive IHC correlates with HPV status."
+      },
+      {
+        "alteration": "TP53 mutation — HPV-independent pathway",
+        "notes": "~70% of vulvar SCC. Arises from dVIN in background of lichen sclerosus. More aggressive; higher recurrence rate. p53 aberrant IHC is a surrogate."
+      }
+    ]
+  },
+  {
+    "id": "gynae-undifferentiated-uterine-sarcoma",
+    "name": "Undifferentiated Uterine Sarcoma",
+    "category": "Gynaecologic",
+    "markers": [
+      {
+        "marker": "Vimentin",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Positive; mesenchymal marker. Not specific."
+      },
+      {
+        "marker": "CD10",
+        "role": "variable",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "Focal CD10 may be present — does not confirm LG-ESS (which should also show hormone receptor positivity and low grade). UUS is CD10 variable with high-grade features and absent hormone receptor expression."
+      },
+      {
+        "marker": "ER / PR",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "high",
+        "notes": "Negative or only very focal — distinguishes from LG-ESS (ER+/PR+) and HG-ESS (focal ER/PR possible). Absence of hormone receptors with high-grade morphology supports UUS."
+      },
+      {
+        "marker": "Cyclin D1",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — helps exclude HG-ESS with YWHAE::NUTM2 rearrangement (Cyclin D1 overexpressed)."
+      },
+      {
+        "marker": "SMARCA4 (BRG1)",
+        "role": "loss",
+        "sensitivity": "~20%",
+        "specificity": "—",
+        "notes": "Loss in a subset of UUS — SMARCA4-deficient uterine sarcomas have distinct clinicopathologic features. Test if standard markers inconclusive."
+      },
+      {
+        "marker": "Keratins (AE1/AE3, CK7)",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — excludes sarcomatoid/dedifferentiated carcinoma and carcinosarcoma."
+      },
+      {
+        "marker": "Desmin / SMA",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — excludes leiomyosarcoma."
+      },
+      {
+        "marker": "p53",
+        "role": "variable",
+        "sensitivity": "~40%",
+        "specificity": "—",
+        "notes": "Aberrant p53 in a subset. High-grade, p53-aberrant, keratin-negative uterine tumours are in the differential with carcinosarcoma."
+      }
+    ]
+  },
+  {
+    "id": "ovarian-brenner-malignant",
+    "name": "Malignant Brenner Tumour",
+    "category": "Gynaecologic",
+    "markers": [
+      {
+        "marker": "GATA3",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Strongly positive — urothelial marker. Key diagnostic marker shared with urothelial carcinoma."
+      },
+      {
+        "marker": "p63",
+        "role": "positive",
+        "sensitivity": "~85%",
+        "specificity": "—",
+        "notes": "Positive in transitional/urothelial nests."
+      },
+      {
+        "marker": "CK7",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Diffuse positive."
+      },
+      {
+        "marker": "CK20",
+        "role": "variable",
+        "sensitivity": "~30%",
+        "specificity": "—",
+        "notes": "Variable. CK7+/CK20 variable pattern similar to urothelial carcinoma."
+      },
+      {
+        "marker": "Uroplakin III",
+        "role": "variable",
+        "sensitivity": "~40%",
+        "specificity": "high",
+        "notes": "Variable; when positive confirms urothelial-type differentiation."
+      },
+      {
+        "marker": "WT1",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "high",
+        "notes": "Negative — distinguishes from serous carcinoma (WT1+)."
+      },
+      {
+        "marker": "PAX8",
+        "role": "variable",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "Variable positivity — less useful here than in other ovarian carcinoma types."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "CDKN2A deletion / PIK3CA mutation",
+        "notes": "Recurrent alterations in malignant Brenner. CDKN2A (p16) loss detectable by IHC. No recurrent translocation or highly specific molecular marker."
+      }
+    ]
+  },
+
+  // ── Gastrointestinal (additional) ────────────────────────────────────────
+  {
+    "id": "oesophageal-adenocarcinoma",
+    "name": "Oesophageal / OGJ Adenocarcinoma",
+    "category": "Gastrointestinal",
+    "markers": [
+      {
+        "marker": "CK7",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Positive. Glandular carcinoma of Barrett's origin."
+      },
+      {
+        "marker": "CK20",
+        "role": "variable",
+        "sensitivity": "~30%",
+        "specificity": "—",
+        "notes": "Variable; can be CK7+/CK20+ in Barrett's-type adenocarcinoma."
+      },
+      {
+        "marker": "CDX2",
+        "role": "variable",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "Focally positive in Barrett's-associated adenocarcinoma reflecting intestinal metaplasia origin. Strong diffuse CDX2 favours gastric or intestinal primary."
+      },
+      {
+        "marker": "HER2",
+        "role": "variable",
+        "sensitivity": "~20%",
+        "specificity": "—",
+        "notes": "Amplified in ~20% of gastro-oesophageal adenocarcinoma. Mandatory assessment (ToGA criteria) — trastuzumab indicated for HER2 3+ or ISH-amplified tumours. Score using gastric HER2 guidelines."
+      },
+      {
+        "marker": "PD-L1 (CPS)",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Combined Positive Score (CPS) ≥1 required for pembrolizumab (KEYNOTE-590); CPS ≥10 for nivolumab (CheckMate 649). Use 22C3 clone for CPS scoring."
+      },
+      {
+        "marker": "MLH1 / PMS2 / MSH2 / MSH6",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "MMR IHC screen — dMMR/MSI-H identifies patients eligible for pembrolizumab. ~5% of OGJ adenocarcinomas."
+      },
+      {
+        "marker": "EBER (ISH)",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "EBV-associated gastric/OGJ carcinoma (~5–9%) — excellent immunotherapy response, associated with MLH1 promoter methylation and PIK3CA mutations."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "HER2 amplification",
+        "notes": "~20% of cases. Trastuzumab + chemotherapy is standard first-line for HER2+ oesophagogastric adenocarcinoma (ToGA trial)."
+      },
+      {
+        "alteration": "FGFR2 amplification",
+        "notes": "~5%. Targetable with bemarituzumab (anti-FGFR2b). Enriched in CIN-type tumours."
+      },
+      {
+        "alteration": "KRAS / PIK3CA / TP53 mutations",
+        "notes": "Common molecular alterations. KRAS G12C targetable with sotorasib in selected cases."
+      }
+    ]
+  },
+  {
+    "id": "anal-scc",
+    "name": "Anal Squamous Cell Carcinoma",
+    "category": "Gastrointestinal",
+    "markers": [
+      {
+        "marker": "p16",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Diffuse block-positive in virtually all anal SCC — reflects high-risk HPV (predominantly HPV16) integration. p16 is a surrogate for HPV-driven carcinogenesis."
+      },
+      {
+        "marker": "p40 / p63",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Confirms squamous lineage. p40 preferred — more specific than p63."
+      },
+      {
+        "marker": "CK5/6",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Positive; squamous marker."
+      },
+      {
+        "marker": "PD-L1 (CPS)",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "PD-L1 CPS used for pembrolizumab in recurrent/metastatic anal SCC (KEYNOTE-158 — CPS ≥10 enriches response)."
+      },
+      {
+        "marker": "CDX2 / CK20",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — confirms squamous rather than glandular (anal adenocarcinoma or rectal primary)."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "High-risk HPV (predominantly HPV16)",
+        "notes": "~90–95% HPV16+. Near-universal HPV association distinguishes anal SCC from perianal skin SCC (which is HPV-independent in ~50%)."
+      },
+      {
+        "alteration": "PIK3CA mutation",
+        "notes": "~30% of anal SCC. PIK3CA amplification also common."
+      }
+    ]
+  },
+  {
+    "id": "appendix-goblet-cell-adenocarcinoma",
+    "name": "Goblet Cell Adenocarcinoma of the Appendix",
+    "category": "Gastrointestinal",
+    "markers": [
+      {
+        "marker": "Synaptophysin",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Positive in goblet/NE cells. Reflects dual glandular–neuroendocrine phenotype."
+      },
+      {
+        "marker": "Chromogranin A",
+        "role": "variable",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "Variably positive — less consistent than synaptophysin in GCA."
+      },
+      {
+        "marker": "CDX2",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Strongly positive — intestinal differentiation. Key marker."
+      },
+      {
+        "marker": "CK20",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Positive; typical CK7−/CK20+ lower GI pattern."
+      },
+      {
+        "marker": "CK7",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Typically negative (unlike mucinous adenocarcinoma of other GI sites which may be CK7+)."
+      },
+      {
+        "marker": "MUC2",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Strongly positive — goblet cell mucin. Typical intestinal mucin profile."
+      },
+      {
+        "marker": "PAX8",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — excludes ovarian/Müllerian origin, which is critical as GCA can present with peritoneal spread mimicking ovarian carcinoma."
+      },
+      {
+        "marker": "WT1",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — further excludes serous ovarian carcinoma."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "TP53 mutation",
+        "notes": "More common in high-grade (Grade C / Tang classification) GCA. Associated with signet ring cell transformation and worse prognosis."
+      },
+      {
+        "alteration": "KRAS mutation",
+        "notes": "Present in ~30% of GCA. Unlike conventional appendiceal carcinoid/NET which are KRAS-wildtype."
+      }
+    ]
+  },
+  {
+    "id": "gi-nec",
+    "name": "Gastrointestinal Neuroendocrine Carcinoma (SCNEC / LCNEC)",
+    "category": "Gastrointestinal",
+    "markers": [
+      {
+        "marker": "Synaptophysin",
+        "role": "positive",
+        "sensitivity": "~99%",
+        "specificity": "—",
+        "notes": "The most sensitive NE marker. Diffusely positive in both SCNEC and LCNEC."
+      },
+      {
+        "marker": "Chromogranin A",
+        "role": "variable",
+        "sensitivity": "~60%",
+        "specificity": "—",
+        "notes": "Less consistently positive than synaptophysin in high-grade NEC (unlike well-differentiated NET where CgA is usually strong)."
+      },
+      {
+        "marker": "CD56",
+        "role": "positive",
+        "sensitivity": "~85%",
+        "specificity": "—",
+        "notes": "Positive in most GI NEC."
+      },
+      {
+        "marker": "Ki-67",
+        "role": "positive",
+        "sensitivity": "—",
+        "specificity": "high",
+        "notes": "By definition >20% (NEC). In practice usually >55%, often >80%. Ki-67 <55% in a morphologically high-grade NE tumour should prompt consideration of well-differentiated G3 NET (different biology and management)."
+      },
+      {
+        "marker": "CK7 / CK20",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Variable; may retain site-specific CK pattern. Colorectal NEC: CK20+ / CK7−; oesophageal/gastric NEC: CK7+."
+      },
+      {
+        "marker": "p53",
+        "role": "variable",
+        "sensitivity": "~60%",
+        "specificity": "—",
+        "notes": "Aberrant p53 in a subset. Helps distinguish poorly differentiated NEC from G3 NET (which usually shows wildtype p53 and DAXX/ATRX loss)."
+      },
+      {
+        "marker": "RB1",
+        "role": "loss",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "RB1 protein loss (absent nuclear staining) in SCNEC (~70%) — similar to pulmonary SCLC. Retained RB in a high-grade NE tumour favours G3 NET over NEC."
+      },
+      {
+        "marker": "DAXX / ATRX",
+        "role": "retained",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Retained in GI NEC. Loss of DAXX or ATRX is characteristic of well-differentiated G3 PanNET — finding loss should prompt reclassification away from NEC."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "TP53 + RB1 co-mutation",
+        "notes": "The classic NEC signature (~50–70%). Associated with small cell morphology and extremely aggressive behaviour."
+      },
+      {
+        "alteration": "KRAS / BRAF / PIK3CA mutation",
+        "notes": "Recurrent in colorectal and pancreatic NEC. May arise via MiNEN (mixed NE–non-NE) pathway from pre-existing adenoma."
+      }
+    ]
+  },
+  {
+    "id": "pancreatoblastoma",
+    "name": "Pancreatoblastoma",
+    "category": "Gastrointestinal",
+    "markers": [
+      {
+        "marker": "AFP (Alpha-fetoprotein)",
+        "role": "positive",
+        "sensitivity": "~70%",
+        "specificity": "—",
+        "notes": "Positive in a significant subset; serum AFP elevated in most paediatric cases. Useful both diagnostically and as a tumour marker for follow-up."
+      },
+      {
+        "marker": "Trypsin / BCL10",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "BCL10 (nuclear) is an acinar cell marker and useful in diagnosing pancreatoblastoma and acinar cell carcinoma. Trypsin and chymotrypsin confirm acinar differentiation."
+      },
+      {
+        "marker": "Synaptophysin / Chromogranin",
+        "role": "variable",
+        "sensitivity": "~60%",
+        "specificity": "—",
+        "notes": "Focal NE differentiation is common in the NE component. Pancreatoblastoma is triphasic: acinar + NE + ductal elements."
+      },
+      {
+        "marker": "β-catenin (nuclear)",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "Nuclear β-catenin accumulation in squamoid corpuscles is a characteristic feature of pancreatoblastoma. Helps distinguish from acinar cell carcinoma (which lacks squamoid corpuscles)."
+      },
+      {
+        "marker": "CK7 / CK19",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Positive in ductal component."
+      },
+      {
+        "marker": "Vimentin",
+        "role": "positive",
+        "sensitivity": "~70%",
+        "specificity": "—",
+        "notes": "Positive in stromal component."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "CTNNB1 (β-catenin) activating mutation / APC loss",
+        "notes": "Wnt pathway activation (~80%). Nuclear β-catenin IHC is surrogate. Sporadic and Beckwith-Wiedemann syndrome-associated cases both show Wnt activation."
+      },
+      {
+        "alteration": "11p15 LOH / IGF2 overexpression",
+        "notes": "Associated with Beckwith-Wiedemann syndrome (~10% of cases). IGF2 is the likely driver in BWS-related pancreatoblastoma."
+      }
+    ]
+  },
+  {
+    "id": "hcc-cca-combined",
+    "name": "Combined Hepatocellular-Cholangiocarcinoma (cHCC-CCA)",
+    "category": "Gastrointestinal",
+    "markers": [
+      {
+        "marker": "HepPar-1 (Hepatocyte antigen)",
+        "role": "positive",
+        "sensitivity": "~70%",
+        "specificity": "—",
+        "notes": "Positive in HCC component. Focally positive in combined tumour — may be absent in dedifferentiated areas."
+      },
+      {
+        "marker": "Arginase-1",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "high",
+        "notes": "More specific than HepPar-1 for hepatocellular differentiation. Positive in HCC component; negative in CCA component."
+      },
+      {
+        "marker": "CK7",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Positive in CCA/biliary component. Can be focally positive in HCC too — context matters."
+      },
+      {
+        "marker": "CK19",
+        "role": "positive",
+        "sensitivity": "~85%",
+        "specificity": "—",
+        "notes": "Biliary/ductal marker; positive in CCA component. CK19 positivity in what appears to be pure HCC should raise suspicion of combined tumour or intermediate stem cell carcinoma."
+      },
+      {
+        "marker": "Glypican-3 (GPC3)",
+        "role": "positive",
+        "sensitivity": "~75%",
+        "specificity": "—",
+        "notes": "Positive in HCC component. Negative in normal hepatocytes and CCA."
+      },
+      {
+        "marker": "EpCAM (CD326)",
+        "role": "positive",
+        "sensitivity": "~70%",
+        "specificity": "—",
+        "notes": "Positive — marks hepatic progenitor/stem cell phenotype. EpCAM+ combined HCC-CCA is thought to arise from hepatic progenitor cells."
+      },
+      {
+        "marker": "AFP",
+        "role": "variable",
+        "sensitivity": "~40%",
+        "specificity": "—",
+        "notes": "Positive in HCC component; negative in CCA component."
+      },
+      {
+        "marker": "MOC31 / Claudin-4",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "Positive in CCA component. MOC31 and Claudin-4 are useful to confirm adenocarcinoma (biliary) component."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "TP53 / TERT promoter / CTNNB1 mutations",
+        "notes": "Shared with conventional HCC. Combined tumours carry molecular features of both HCC and CCA lineages."
+      },
+      {
+        "alteration": "FGFR2 fusion / IDH1 mutation",
+        "notes": "Rare in combined tumour; present in CCA-dominant component. FGFR2 fusions targetable with pemigatinib/infigratinib."
+      }
+    ]
+  },
+  {
+    "id": "gastric-net",
+    "name": "Gastric Neuroendocrine Tumour (Types I–III)",
+    "category": "Gastrointestinal",
+    "markers": [
+      {
+        "marker": "Synaptophysin",
+        "role": "positive",
+        "sensitivity": "~99%",
+        "specificity": "—",
+        "notes": "Diffusely positive in all gastric NETs. Primary NE marker."
+      },
+      {
+        "marker": "Chromogranin A",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Positive; serum CgA elevated in Type I/II, moderate in Type III."
+      },
+      {
+        "marker": "Ki-67",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Grade classification: G1 <3%, G2 3–20%, G3 >20%. Type I/II gastric NETs are usually G1–G2; Type III can be G1–G3."
+      },
+      {
+        "marker": "Histamine / Vesicular monoamine transporter 2 (VMAT2)",
+        "role": "positive",
+        "sensitivity": "~85%",
+        "specificity": "high",
+        "notes": "ECL-cell (enterochromaffin-like) marker — VMAT2 positivity confirms ECL-cell origin, characteristic of Type I and II gastric NETs. Not routinely available in all labs."
+      },
+      {
+        "marker": "Gastrin (serum / IHC in gastrin-producing cells)",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Elevated serum gastrin in Type I (chronic atrophic gastritis) and Type II (MEN1/ZES). Type III (sporadic, no hypergastrinaemia) has normal serum gastrin. Context: hypergastrinaemia → ECL-cell hyperplasia → Type I/II."
+      },
+      {
+        "marker": "Somatostatin receptor 2 (SSTR2)",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "Positive in well-differentiated gastric NETs. SSTR2 IHC predicts response to octreotide/lanreotide and suitability for PRRT (Lu-177 DOTATATE)."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "Type I: Autoimmune gastric atrophy / H. pylori",
+        "notes": "Most common (70–80%). Benign behaviour; parietal cell loss → hypochlorhydria → hypergastrinaemia → ECL hyperplasia → NET. Small, multifocal, body/fundus."
+      },
+      {
+        "alteration": "Type II: MEN1 mutation + ZES (gastrinoma)",
+        "notes": "~5% of gastric NETs. MEN1 germline mutation. Hypergastrinaemia from duodenal/pancreatic gastrinoma. Intermediate risk."
+      },
+      {
+        "alteration": "Type III: Sporadic (no hypergastrinaemia)",
+        "notes": "~20%. Often large, solitary, antrally located. Higher malignant potential; metastatic in ~50%. No hypergastrinaemia. Managed as conventional NET."
+      }
+    ]
+  },
+
+  // ── CNS (additional) ─────────────────────────────────────────────────────
+  {
+    "id": "cns-pcnsl",
+    "name": "Primary CNS Lymphoma (PCNSL)",
+    "category": "CNS",
+    "markers": [
+      {
+        "marker": "CD20",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Strongly positive — virtually all PCNSL are DLBCL of B-cell origin. CD20 IHC is the first line on brain biopsy."
+      },
+      {
+        "marker": "CD79a / PAX5",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "B-cell markers; useful when CD20 is dim or negative (e.g. prior rituximab treatment)."
+      },
+      {
+        "marker": "MUM1 / IRF4",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Strongly positive — ABC/non-GCB phenotype in ~90% of PCNSL (unlike systemic DLBCL which is ~40% ABC). MUM1+ is a consistent feature."
+      },
+      {
+        "marker": "BCL6",
+        "role": "positive",
+        "sensitivity": "~70%",
+        "specificity": "—",
+        "notes": "Positive in GC-marker; present in most PCNSL despite the non-GCB phenotype by Hans algorithm."
+      },
+      {
+        "marker": "CD10",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative in ~90% of PCNSL. CD10 positivity in a CNS lymphoma should prompt systemic work-up for secondary CNS involvement from systemic GCB DLBCL."
+      },
+      {
+        "marker": "Ki-67",
+        "role": "positive",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Very high, typically >80%. Reflects aggressive biology."
+      },
+      {
+        "marker": "GFAP",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — excludes glial tumour. Perivascular pattern of PCNSL with reactive astrocytes may be GFAP+ in background — do not confuse."
+      },
+      {
+        "marker": "EBV (EBER ISH)",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Positive in immunocompromised patients (AIDS, post-transplant). EBV+ PCNSL = distinct entity from EBV− PCNSL in immunocompetent patients."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "MYD88 L265P mutation",
+        "notes": "Present in ~70–80% of PCNSL. Diagnostic value — highly recurrent in PCNSL. Can be detected on CSF cell-free DNA. Activates NF-κB/TLR pathway."
+      },
+      {
+        "alteration": "CD79B mutation",
+        "notes": "~30–40% of PCNSL. Cooperates with MYD88 L265P in BCR/NF-κB signalling. BTK inhibitors (ibrutinib) active in MYD88/CD79B co-mutated PCNSL."
+      },
+      {
+        "alteration": "9p24.1 amplification (PD-L1/PD-L2)",
+        "notes": "Less common than in PMBL but present in a subset. Associated with immune evasion."
+      }
+    ]
+  },
+
+  // ── Endocrine (additional) ───────────────────────────────────────────────
+  {
+    "id": "pitnet",
+    "name": "Pituitary Neuroendocrine Tumour (PitNET)",
+    "category": "Endocrine",
+    "markers": [
+      {
+        "marker": "Synaptophysin",
+        "role": "positive",
+        "sensitivity": "~99%",
+        "specificity": "—",
+        "notes": "Diffusely positive — confirms NE lineage. Not site-specific."
+      },
+      {
+        "marker": "Chromogranin A",
+        "role": "positive",
+        "sensitivity": "~85%",
+        "specificity": "—",
+        "notes": "Positive in most PitNETs."
+      },
+      {
+        "marker": "Pit-1",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "high",
+        "notes": "Pit-1 lineage transcription factor: positive in GH, PRL, and TSH-secreting tumours. Pit-1 IHC determines tumour lineage — essential for WHO 2022 classification."
+      },
+      {
+        "marker": "T-Pit (TBX19)",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "high",
+        "notes": "T-Pit lineage: positive in ACTH-secreting tumours (Cushing's disease, Nelson's). T-Pit IHC confirms corticotroph differentiation."
+      },
+      {
+        "marker": "SF-1",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "high",
+        "notes": "SF-1 lineage: positive in gonadotroph tumours (FSH/LH). Most common PitNET in adults — often clinically non-functioning."
+      },
+      {
+        "marker": "GH (Growth hormone)",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Positive in somatotroph PitNET. Sparsely granulated (CK18 paranuclear dot+) vs densely granulated variants have different behaviour."
+      },
+      {
+        "marker": "ACTH",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Positive in corticotroph PitNET (Cushing's disease). Crooke's cell adenoma (T-Pit+, ACTH+) has hyaline cytoplasm; more aggressive."
+      },
+      {
+        "marker": "PRL (Prolactin)",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Positive in lactotroph PitNET (prolactinoma). Most common in women; managed medically with dopamine agonists."
+      },
+      {
+        "marker": "CK18 (paranuclear dot)",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Sparsely granulated somatotroph tumours show CK18 paranuclear dot ('ring') pattern — distinct from densely granulated. Sparsely granulated are more aggressive and less responsive to somatostatin analogues."
+      },
+      {
+        "marker": "Ki-67",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Ki-67 ≥3% designates 'high proliferative index' — an aggressive behaviour marker in PitNETs. No formal grading system."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "MEN1 mutation (germline)",
+        "notes": "~3% of PitNETs are MEN1-associated. Usually macroadenomas; check for familial MEN1."
+      },
+      {
+        "alteration": "AIP mutation (germline)",
+        "notes": "~10–15% of young-onset (<30 yr) or familial isolated pituitary adenoma (FIPA). GH-secreting PitNETs predominantly. Less responsive to somatostatin analogues."
+      },
+      {
+        "alteration": "USP8 mutation (somatic)",
+        "notes": "~40–60% of Cushing's disease (corticotroph PitNET). Activates EGFR signalling. More common in women."
+      }
+    ]
+  },
+  {
+    "id": "craniopharyngioma",
+    "name": "Craniopharyngioma",
+    "category": "Endocrine",
+    "markers": [
+      {
+        "marker": "β-catenin (nuclear)",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "high",
+        "notes": "Nuclear β-catenin accumulation in adamantinomatous craniopharyngioma (ACP) — one of the most specific IHC findings in CNS tumour pathology. Reflects CTNNB1 exon 3 mutation. Papillary craniopharyngioma (PCP) shows membranous (normal) β-catenin pattern."
+      },
+      {
+        "marker": "BRAF V600E (IHC)",
+        "role": "variable",
+        "sensitivity": "~90%",
+        "specificity": "high",
+        "notes": "Positive in papillary craniopharyngioma (PCP) — essentially 100% harbour BRAF V600E mutation. VE1 clone IHC highly sensitive. Negative in adamantinomatous type. BRAF/MEK inhibitors active in recurrent PCP."
+      },
+      {
+        "marker": "CK (AE1/AE3, CK5/6)",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Epithelial keratins positive — confirms epithelial nature. Adamantinomatous: squamous epithelium with wet keratin; papillary: mature squamous lining."
+      },
+      {
+        "marker": "EMA",
+        "role": "variable",
+        "sensitivity": "~60%",
+        "specificity": "—",
+        "notes": "Variably positive in PCP."
+      },
+      {
+        "marker": "GFAP",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative in neoplastic epithelium (positive in reactive gliosis in adjacent brain)."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "CTNNB1 exon 3 mutation — adamantinomatous type",
+        "notes": "~95% of ACP. Activates Wnt pathway; nuclear β-catenin IHC is surrogate. Occurs in children and young adults (bimodal age distribution)."
+      },
+      {
+        "alteration": "BRAF V600E — papillary type",
+        "notes": "~95–100% of PCP. Predominantly adults. Combination BRAF+MEK inhibition (dabrafenib+trametinib) shows high response rates in recurrent PCP."
+      }
+    ]
+  },
+  {
+    "id": "parathyroid-carcinoma",
+    "name": "Parathyroid Carcinoma",
+    "category": "Endocrine",
+    "markers": [
+      {
+        "marker": "Parafibromin (CDC73 / HRPT2)",
+        "role": "loss",
+        "sensitivity": "~70%",
+        "specificity": "high",
+        "notes": "Loss of parafibromin nuclear expression is the most specific IHC marker for parathyroid carcinoma. Retained in adenoma (diffuse nuclear staining). Loss reflects CDC73/HRPT2 mutation — germline in hyperparathyroidism-jaw tumour (HPT-JT) syndrome."
+      },
+      {
+        "marker": "PGP9.5",
+        "role": "positive",
+        "sensitivity": "~70%",
+        "specificity": "—",
+        "notes": "Positive in parathyroid carcinoma; negative/weak in adenoma. Useful adjunct to parafibromin."
+      },
+      {
+        "marker": "Rb (Retinoblastoma protein)",
+        "role": "loss",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "Loss of Rb nuclear expression in a subset of parathyroid carcinoma. Retained in most adenomas."
+      },
+      {
+        "marker": "Ki-67",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Higher than adenoma, but overlap exists. Ki-67 >5% supports carcinoma but is not diagnostic alone."
+      },
+      {
+        "marker": "PTH (Parathyroid hormone)",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Positive — confirms parathyroid origin. Not discriminatory between adenoma and carcinoma."
+      },
+      {
+        "marker": "GATA3",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Positive — useful to confirm parathyroid lineage (alongside PTH). Also positive in breast, urothelial, and thymic tumours."
+      },
+      {
+        "marker": "CK (low-MW)",
+        "role": "positive",
+        "sensitivity": "~70%",
+        "specificity": "—",
+        "notes": "Focally positive. Carcinoma tends to show stronger keratin staining than adenoma."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "CDC73 / HRPT2 mutation (somatic or germline)",
+        "notes": "~70% of parathyroid carcinoma — germline in HPT-JT syndrome. Loss-of-function → parafibromin loss by IHC. Germline testing indicated in all parathyroid carcinoma patients."
+      },
+      {
+        "alteration": "CCND1 (Cyclin D1) overexpression",
+        "notes": "Common in parathyroid adenoma (not specific for carcinoma). Inversion of 11q13 → CCND1 overexpression in adenoma."
+      }
+    ]
+  },
+
+  // ── Lung / Thymus (additional) ────────────────────────────────────────────
+  {
+    "id": "lung-sarcomatoid-carcinoma",
+    "name": "Pulmonary Sarcomatoid Carcinoma",
+    "category": "Lung",
+    "markers": [
+      {
+        "marker": "Keratins (AE1/AE3, MNF116)",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "May be focal or weak in spindle cell areas — extensive sampling required. Keratin positivity is essential to confirm carcinomatous nature. CAM5.2 and CK7 may be more sensitive than HMWCK in pleomorphic areas."
+      },
+      {
+        "marker": "Vimentin",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Strongly positive in sarcomatoid component — not specific but confirms mesenchymal-like phenotype."
+      },
+      {
+        "marker": "TTF-1",
+        "role": "variable",
+        "sensitivity": "~25%",
+        "specificity": "—",
+        "notes": "Positive in a minority (~25%) — focal in carcinomatous areas. TTF-1+ favours pulmonary primary over metastatic sarcoma."
+      },
+      {
+        "marker": "Napsin-A",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Usually negative. Rare focal positivity."
+      },
+      {
+        "marker": "p40 / p63",
+        "role": "variable",
+        "sensitivity": "~40%",
+        "specificity": "—",
+        "notes": "Positive in spindle cell / squamous components. Pleomorphic carcinoma may show focal p63/p40."
+      },
+      {
+        "marker": "CD34",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative in sarcomatoid carcinoma — helps exclude SFT (CD34+) and DFSP (CD34+)."
+      },
+      {
+        "marker": "PD-L1 (TPS)",
+        "role": "variable",
+        "sensitivity": "~60%",
+        "specificity": "—",
+        "notes": "High PD-L1 TPS (≥50%) enriched in sarcomatoid carcinoma — these tumours respond well to immune checkpoint inhibitors."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "MET exon 14 skipping mutation",
+        "notes": "~20–30% of pulmonary sarcomatoid carcinoma — highest rate of MET ex14 skip of any lung carcinoma subtype. Targetable with capmatinib or tepotinib."
+      },
+      {
+        "alteration": "KRAS mutation",
+        "notes": "~20%. Common in pleomorphic carcinoma component."
+      },
+      {
+        "alteration": "BRAF V600E",
+        "notes": "~5%. Targetable."
+      }
+    ]
+  },
+  {
+    "id": "thymus-thymoma",
+    "name": "Thymoma (WHO Types A, AB, B1, B2, B3)",
+    "category": "Thymus",
+    "markers": [
+      {
+        "marker": "p63",
+        "role": "positive",
+        "sensitivity": "~99%",
+        "specificity": "—",
+        "notes": "Positive in thymic epithelial cells across all thymoma types. Key marker to identify the epithelial component among abundant TdT+ T-lymphocytes."
+      },
+      {
+        "marker": "CK (AE1/AE3, CK5/6, CK19)",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Keratins highlight thymic epithelial cells. CK5/6 and CK19 are particularly useful in lymphocyte-rich types (B1/B2) where epithelial cells are sparse."
+      },
+      {
+        "marker": "TdT",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Positive in cortical (immature) T-lymphocytes that populate B1, B2, and B3 thymomas. The proportion of TdT+ lymphocytes decreases from B1→B3. In type A thymoma, TdT+ lymphocytes are sparse or absent."
+      },
+      {
+        "marker": "CD5 (on epithelial cells)",
+        "role": "positive",
+        "sensitivity": "~75%",
+        "specificity": "—",
+        "notes": "CD5 on thymic epithelial cells — positive in most thymomas (not lymphocytes). Thymic carcinoma is also CD5+ on tumour cells. Distinguishes thymic from other mediastinal tumours."
+      },
+      {
+        "marker": "CD117 (c-KIT)",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Positive in thymic carcinoma (~80%); variably positive in B3 thymoma (~20%). Helps distinguish thymic carcinoma from B3 thymoma."
+      },
+      {
+        "marker": "PAX8",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative in thymoma and thymic carcinoma — important to exclude ectopic parathyroid, GCT, and other PAX8+ tumours in the anterior mediastinum."
+      },
+      {
+        "marker": "GLUT-1",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Positive in A and AB thymoma; negative in B-types. Useful for classification within the A/AB spectrum."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "GTF2I mutation (type A/AB thymoma)",
+        "notes": "~80% of type A and AB thymoma. L424H hotspot. Largely specific to thymoma. Associated with myasthenia gravis."
+      },
+      {
+        "alteration": "CDKN2A deletion / TP53 mutation",
+        "notes": "More common in B3 thymoma and thymic carcinoma — associated with aggressive behaviour."
+      }
+    ]
+  },
+
+  // ── Male Genital (additional) ─────────────────────────────────────────────
+  {
+    "id": "prostate-nec",
+    "name": "Prostate Small Cell / Neuroendocrine Carcinoma",
+    "category": "Prostate",
+    "markers": [
+      {
+        "marker": "Synaptophysin",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Strongly positive. Primary NE marker."
+      },
+      {
+        "marker": "Chromogranin A",
+        "role": "positive",
+        "sensitivity": "~75%",
+        "specificity": "—",
+        "notes": "Positive in most cases."
+      },
+      {
+        "marker": "CD56",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Positive."
+      },
+      {
+        "marker": "PSA",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "high",
+        "notes": "Negative or only very focal — key distinction from conventional acinar adenocarcinoma (PSA+). Loss of PSA expression with NE markers = prostatic NEC until proven otherwise."
+      },
+      {
+        "marker": "NKX3.1",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative in NEC component. NKX3.1 is a prostate lineage marker; loss alongside NE differentiation marks treatment-emergent NEC."
+      },
+      {
+        "marker": "AR (Androgen Receptor)",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative or only focally positive — reflects androgen independence. This is the key clinical issue: AR-negative NEC does not respond to androgen deprivation therapy."
+      },
+      {
+        "marker": "TTF-1",
+        "role": "variable",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "Positive in ~50% of prostatic SCNEC — does NOT indicate pulmonary primary. Same caveat as cervical NEC: TTF-1 is NOT site-specific in extrapulmonary SCNEC."
+      },
+      {
+        "marker": "Rb (Retinoblastoma protein)",
+        "role": "loss",
+        "sensitivity": "~70%",
+        "specificity": "—",
+        "notes": "RB1 loss common in treatment-emergent NEC of prostate (t-SCNEC). Rb loss by IHC correlates with RB1 deletion."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "RB1 deletion + TP53 mutation",
+        "notes": "~70% of treatment-emergent prostatic SCNEC. These alterations often present in the original adenocarcinoma in small clonal populations that expand under ADT/enzalutamide pressure."
+      },
+      {
+        "alteration": "AURKA / MYCN amplification",
+        "notes": "~40% of prostatic NEC. MYCN drives NE transdifferentiation. Aurora A kinase inhibitors (alisertib) investigated."
+      },
+      {
+        "alteration": "AR gene locus alterations",
+        "notes": "AR splice variants or AR loss in treatment-emergent NEC. AR-V7 splice variant can be detected in circulating tumour cells."
+      }
+    ]
+  },
+  {
+    "id": "penile-scc",
+    "name": "Penile Squamous Cell Carcinoma",
+    "category": "Prostate",
+    "markers": [
+      {
+        "marker": "p16",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Two aetiological pathways: HPV-associated (~30–50%, p16 diffuse block-positive) arising from penile HSIL (uPIN); and HPV-independent (~50–70%, p16 negative/patchy) arising from lichen sclerosus/dVIN. p16 IHC guides aetiology."
+      },
+      {
+        "marker": "p53",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Aberrant p53 in HPV-independent pathway (~70% of HPV-negative penile SCC). Wildtype p53 in HPV-associated disease. Pattern mirrors vulvar SCC."
+      },
+      {
+        "marker": "p40 / p63",
+        "role": "positive",
+        "sensitivity": "~99%",
+        "specificity": "—",
+        "notes": "Confirms squamous lineage. p40 preferred."
+      },
+      {
+        "marker": "CK5/6",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Supports squamous differentiation."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "High-risk HPV (HPV16/18) — HPV pathway",
+        "notes": "~30–50% of penile SCC, predominantly warty and basaloid subtypes. p16 block-positive IHC correlates strongly with HPV status."
+      },
+      {
+        "alteration": "TP53 / CDKN2A mutations — HPV-independent",
+        "notes": "Keratinising usual-type SCC. Arise on background of lichen sclerosus/differentiated intraepithelial neoplasia. More aggressive clinical course."
+      },
+      {
+        "alteration": "PIK3CA / HRAS mutations",
+        "notes": "Recurrent in both HPV+ and HPV− subtypes. No approved targeted therapy; studied in clinical trials."
+      }
+    ]
+  },
+
+  // ── Skin (additional) ─────────────────────────────────────────────────────
+  {
+    "id": "skin-mycosis-fungoides",
+    "name": "Mycosis Fungoides / Sézary Syndrome",
+    "category": "Skin",
+    "markers": [
+      {
+        "marker": "CD3",
+        "role": "positive",
+        "sensitivity": "~99%",
+        "specificity": "—",
+        "notes": "Positive T-cell marker in epidermotropic lymphocytes. Pan-T-cell marker."
+      },
+      {
+        "marker": "CD4",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Positive — helper T-cell phenotype in most MF/SS. CD4+ epidermotropic infiltrate is characteristic."
+      },
+      {
+        "marker": "CD8",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative in classic MF/SS (CD4+/CD8− ratio inverted). CD8+ MF is a rare variant with better prognosis."
+      },
+      {
+        "marker": "CD7",
+        "role": "loss",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "Loss of CD7 expression in neoplastic T-cells is a characteristic pan-T-cell marker loss. CD7 loss in CD4+ T-cells in an epidermotropic infiltrate supports MF over inflammatory dermatosis."
+      },
+      {
+        "marker": "CD5",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "Retained in most MF. CD5 loss (like CD7 loss) can occur as part of aberrant T-cell phenotype."
+      },
+      {
+        "marker": "CD20 / CD30",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "CD20 negative (B-cell marker). CD30 negative in classic MF — CD30+ large cell transformation of MF is a distinct aggressive entity (treat differently)."
+      },
+      {
+        "marker": "PD-1 (CD279)",
+        "role": "positive",
+        "sensitivity": "~70%",
+        "specificity": "—",
+        "notes": "Positive in neoplastic T-cells in MF/SS. PD-1 is also expressed on TFH cells — check in context."
+      },
+      {
+        "marker": "TCR (clonal) — by PCR",
+        "role": "screen",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "T-cell receptor gene rearrangement clonality by PCR on skin biopsy strongly supports diagnosis when morphology is equivocal. Not IHC — requires molecular testing."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "CDKN2A / TP53 deletion or mutation",
+        "notes": "Common in advanced/transformed MF. Associated with large cell transformation."
+      },
+      {
+        "alteration": "JAK / STAT pathway mutations (STAT3, STAT5B, JAK1/2/3)",
+        "notes": "Recurrent in SS (~40%) and advanced MF. STAT3/5 phosphorylation detectable by IHC. JAK inhibitors (ruxolitinib) active in SS."
+      }
+    ]
+  },
+  {
+    "id": "skin-kaposi-sarcoma",
+    "name": "Kaposi Sarcoma",
+    "category": "Skin",
+    "markers": [
+      {
+        "marker": "HHV-8 LANA-1 (Latent Nuclear Antigen-1)",
+        "role": "positive",
+        "sensitivity": "~99%",
+        "specificity": "high",
+        "notes": "Nuclear dot pattern — the most specific marker. Positive in virtually 100% of KS regardless of clinical type (classic/endemic/epidemic/iatrogenic). Essential for diagnosis."
+      },
+      {
+        "marker": "CD31",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Endothelial marker — strongly positive. Best endothelial marker for KS."
+      },
+      {
+        "marker": "CD34",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Positive — endothelial/vascular marker."
+      },
+      {
+        "marker": "ERG",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Nuclear endothelial transcription factor; strongly positive."
+      },
+      {
+        "marker": "D2-40 (Podoplanin)",
+        "role": "positive",
+        "sensitivity": "~85%",
+        "specificity": "—",
+        "notes": "Lymphatic endothelial marker — KS has lymphatic-endothelial differentiation. D2-40 positivity distinguishes KS from haemangiosarcoma (D2-40 variable/negative)."
+      },
+      {
+        "marker": "LYVE-1 / Prox-1",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "Lymphatic markers. Confirm lymphovascular origin of KS."
+      },
+      {
+        "marker": "SMA / Desmin",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — helps exclude smooth muscle/pericytic tumours."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "HHV-8 (Human Herpesvirus 8 / KSHV) infection",
+        "notes": "Necessary but not sufficient cause of KS. All four clinical types (classic, endemic, epidemic/AIDS-related, iatrogenic) are HHV-8+. LANA-1 IHC reflects HHV-8 latent infection."
+      },
+      {
+        "alteration": "HIV co-infection (epidemic KS)",
+        "notes": "HIV-induced immunosuppression dramatically increases KS risk. Antiretroviral therapy (ART) is the cornerstone of epidemic KS treatment."
+      }
+    ]
+  },
+  {
+    "id": "skin-spitz-tumour",
+    "name": "Spitz Tumour (Spitz Naevus / Atypical Spitz Tumour / Spitzoid Melanoma)",
+    "category": "Skin",
+    "markers": [
+      {
+        "marker": "S100",
+        "role": "positive",
+        "sensitivity": "~99%",
+        "specificity": "—",
+        "notes": "Strongly positive — melanocytic lineage. Not discriminatory within the Spitz spectrum."
+      },
+      {
+        "marker": "HMB45",
+        "role": "variable",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "Positive in junctional component; may show 'maturation' gradient (decreasing positivity with depth) in benign Spitz naevus — like conventional naevus. Loss of maturation (persistent deep HMB45) favours malignant behaviour."
+      },
+      {
+        "marker": "Melan-A / MART-1",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Positive throughout."
+      },
+      {
+        "marker": "Ki-67",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Low Ki-67 favours benign; high proliferation (>10%) in deep dermis raises concern for malignancy. However, Spitz naevi can have moderately high Ki-67."
+      },
+      {
+        "marker": "ALK",
+        "role": "variable",
+        "sensitivity": "~20%",
+        "specificity": "high",
+        "notes": "Positive in ALK-rearranged Spitz tumours (~20% of atypical Spitz tumours). Cytoplasmic/granular pattern. ALK rearrangement (DCTN1::ALK, others) is a defining molecular event in this subset."
+      },
+      {
+        "marker": "p16",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Retained in benign Spitz naevus; loss of p16 (CDKN2A homozygous deletion) in atypical Spitz tumour/Spitzoid melanoma. p16 loss is a marker of malignant potential."
+      },
+      {
+        "marker": "BAP1 (nuclear)",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "BAP1-deficient Spitzoid tumour — loss of BAP1 nuclear expression in epithelioid melanocytes. Often associated with germline BAP1 mutation and predisposition to uveal melanoma and mesothelioma."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "HRAS mutation (Q61)",
+        "notes": "~20% of Spitz naevi. Mutually exclusive with BRAF/NRAS. Copy number gain of 11p in some HRAS-mutant Spitz tumours. Not targetable but diagnostic."
+      },
+      {
+        "alteration": "Kinase fusions (ALK, RET, ROS1, NTRK1/3, MET, BRAF)",
+        "notes": "Recurrently fused in atypical Spitz tumours (~70% of ALK-rearranged, others). These are biologically distinct from BRAF/NRAS-mutant conventional melanoma. Fusion partners vary (DCTN1::ALK, CLIP1::RET, etc.)."
+      },
+      {
+        "alteration": "CDKN2A (p16) homozygous deletion",
+        "notes": "Absent p16 IHC + FISH-confirmed deletion predicts malignant potential. Combined with histologic features guides management."
+      }
+    ]
+  },
+
+  // ── Mesothelioma (additional) ─────────────────────────────────────────────
+  {
+    "id": "mesothelioma-sarcomatoid",
+    "name": "Sarcomatoid / Biphasic Mesothelioma",
+    "category": "Mesothelioma",
+    "markers": [
+      {
+        "marker": "Keratins (AE1/AE3, CAM5.2)",
+        "role": "positive",
+        "sensitivity": "~75%",
+        "specificity": "—",
+        "notes": "May be focal or weak in sarcomatoid areas — diffuse keratin positivity in epithelioid component. Focal keratin in a pleural spindle cell tumour is a key clue to sarcomatoid mesothelioma."
+      },
+      {
+        "marker": "CK5/6",
+        "role": "variable",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "Variable in sarcomatoid component; more consistently positive in epithelioid areas of biphasic mesothelioma."
+      },
+      {
+        "marker": "BAP1 (nuclear)",
+        "role": "loss",
+        "sensitivity": "~60%",
+        "specificity": "high",
+        "notes": "Loss of BAP1 nuclear expression confirms malignant mesothelioma (vs reactive mesothelial proliferation). Sensitivity varies by histotype: ~60–70% epithelioid, ~30–40% sarcomatoid, ~50% biphasic. BAP1 loss = malignant; retained BAP1 does NOT exclude mesothelioma."
+      },
+      {
+        "marker": "MTAP",
+        "role": "loss",
+        "sensitivity": "~65%",
+        "specificity": "high",
+        "notes": "Surrogate for CDKN2A (9p21) homozygous deletion — detectable by IHC (~93% concordance with FISH). Sensitivity varies by histotype: ~70–80% sarcomatoid, ~30–40% epithelioid. Complementary to BAP1 — sarcomatoid mesothelioma tends to lose MTAP while retaining BAP1, and vice versa for epithelioid. Use both markers together; a positive result with either confirms malignancy."
+      },
+      {
+        "marker": "p16 (CDKN2A) FISH",
+        "role": "loss",
+        "sensitivity": "~70%",
+        "specificity": "high",
+        "notes": "Homozygous deletion of 9p21 by FISH is a validated diagnostic criterion for mesothelioma. More common in sarcomatoid (~80%) than epithelioid (~40%) type. FISH is the gold standard when IHC is equivocal."
+      },
+      {
+        "marker": "Calretinin",
+        "role": "variable",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "Positive in epithelioid component of biphasic mesothelioma; often lost in sarcomatoid areas."
+      },
+      {
+        "marker": "WT1",
+        "role": "variable",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "Variable; less sensitive in sarcomatoid than epithelioid type."
+      },
+      {
+        "marker": "D2-40",
+        "role": "variable",
+        "sensitivity": "~60%",
+        "specificity": "—",
+        "notes": "Positive in epithelioid and some biphasic; reduced in sarcomatoid."
+      },
+      {
+        "marker": "CD34",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — important to exclude SFT (CD34+), which is a critical differential in pleural spindle cell tumours."
+      },
+      {
+        "marker": "STAT6 (nuclear)",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "high",
+        "notes": "Negative — excludes SFT (nuclear STAT6 is pathognomonic for NAB2::STAT6 fusion in SFT)."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "BAP1 mutation / loss",
+        "notes": "~60% of mesothelioma. Germline BAP1 mutation (BAP1 tumour predisposition syndrome) associated with mesothelioma, uveal melanoma, RCC, and cutaneous melanocytic tumours."
+      },
+      {
+        "alteration": "CDKN2A homozygous deletion (9p21)",
+        "notes": "~70% of sarcomatoid and ~40% of epithelioid mesothelioma. Detected by FISH or MTAP IHC. Associated with shorter survival."
+      },
+      {
+        "alteration": "NF2 mutation",
+        "notes": "~40% of mesothelioma. Inactivation of Merlin (NF2 tumour suppressor). No approved targeted therapy currently."
+      }
+    ]
+  },
+
+  // ── Bone (additional) ────────────────────────────────────────────────────
+  {
+    "id": "bone-dedifferentiated-chondrosarcoma",
+    "name": "Dedifferentiated Chondrosarcoma",
+    "category": "Bone",
+    "markers": [
+      {
+        "marker": "S100",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Positive in the low-grade cartilaginous (well-differentiated) component. The dedifferentiated component may be S100-negative."
+      },
+      {
+        "marker": "SOX9",
+        "role": "positive",
+        "sensitivity": "~85%",
+        "specificity": "—",
+        "notes": "Nuclear SOX9 in chondroid component — chondrogenic transcription factor. More sensitive than S100 for cartilaginous areas."
+      },
+      {
+        "marker": "Vimentin",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Positive in dedifferentiated (high-grade) component — non-specific mesenchymal marker."
+      },
+      {
+        "marker": "IDH1 R132H (IHC)",
+        "role": "variable",
+        "sensitivity": "~50%",
+        "specificity": "high",
+        "notes": "Positive in ~50% of central chondrosarcoma (IDH1 R132H-specific clone). IDH1/2 mutations are common in low-grade central chondrosarcoma and retained in the dedifferentiated component. IHC tests only R132H — IDH2 and non-R132H IDH1 require sequencing."
+      },
+      {
+        "marker": "Keratins",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — excludes chondroblastic osteosarcoma with epithelial differentiation and metastatic carcinoma."
+      },
+      {
+        "marker": "MDM2 / CDK4",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — important to exclude dedifferentiated liposarcoma (MDM2+/CDK4+) and atypical lipomatous tumour. MDM2/CDK4 negativity supports chondrosarcoma."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "IDH1 / IDH2 mutation",
+        "notes": "~50% of central dedifferentiated chondrosarcoma. IDH mutations arise in the low-grade precursor and are retained in the dedifferentiated component — shared mutation confirms clonality of the biphasic tumour."
+      },
+      {
+        "alteration": "TP53 / RB1 mutation",
+        "notes": "Acquired in the dedifferentiated component as secondary alterations driving high-grade transformation."
+      },
+      {
+        "alteration": "IDH inhibitors (ivosidenib/enasidenib)",
+        "notes": "Investigated in IDH-mutant chondrosarcoma. Modest activity in early trials; ongoing studies."
+      }
+    ]
+  },
+  {
+    "id": "bone-fibrous-dysplasia",
+    "name": "Fibrous Dysplasia",
+    "category": "Bone",
+    "markers": [
+      {
+        "marker": "GNAS (IHC — not routinely available)",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "GNAS R201 mutations detectable by allele-specific IHC in some labs (anti-Gsα clone). Not widely available — molecular testing (PCR/sequencing) is standard for GNAS confirmation."
+      },
+      {
+        "marker": "S100",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative in fibrous stroma — helpful to exclude low-grade chondrosarcoma in difficult cases."
+      },
+      {
+        "marker": "SOX9",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative in fibrous dysplasia stroma. SOX9 positivity would favour chondroid differentiation."
+      },
+      {
+        "marker": "SMA",
+        "role": "variable",
+        "sensitivity": "~40%",
+        "specificity": "—",
+        "notes": "Focal SMA in spindle stromal cells — myofibroblastic component."
+      },
+      {
+        "marker": "Ki-67",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Low proliferation index — helps distinguish from low-grade osteosarcoma (which may have higher Ki-67 and atypical mitoses)."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "GNAS R201C / R201H somatic mutation",
+        "notes": "Present in ~95% of fibrous dysplasia (monostotic and polyostotic). Activating Gsα mutation → constitutive cAMP signalling. Postzygotic somatic mutation — not heritable. In McCune-Albright syndrome (polyostotic FD + café-au-lait spots + endocrinopathies), GNAS mutation detectable in multiple tissues."
+      }
+    ]
+  },
+
+  // ── Myeloid Neoplasms ────────────────────────────────────────────────────
+  {
+    "id": "myeloid-mds",
+    "name": "Myelodysplastic Syndrome (MDS)",
+    "category": "Lymphoma",
+    "markers": [
+      {
+        "marker": "CD34",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Highlights blasts in bone marrow trephine. Normal BM: <5% CD34+ blasts. MDS-IB1: 5–9%; MDS-IB2: 10–19%. Cluster formation of CD34+ cells is abnormal (even if count is low)."
+      },
+      {
+        "marker": "CD117 (c-KIT)",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Marks blasts and mast cells. Use with CD34 to enumerate blasts. CD34−/CD117+ blasts suggest basophilic or myelomonocytic differentiation."
+      },
+      {
+        "marker": "MPO",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Variable in dysplastic myeloid cells. Abnormal MPO localisation (Auer rods, aberrant granulation) supports myelodysplasia."
+      },
+      {
+        "marker": "CD71 / Glycophorin A",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Erythroid markers for assessment of erythroid dysplasia. Megaloblastic or multinucleated erythroblasts highlight the dysplastic erythroid lineage."
+      },
+      {
+        "marker": "CD42b / CD61",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Megakaryocyte markers. Hypolobated, micromegakaryocytes (CD41/CD61+) are classic dysmegakaryopoiesis — best highlighted by immunostaining."
+      },
+      {
+        "marker": "p53",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Aberrant/strong p53 in ≥1% of cells suggests TP53 mutation. Biallelic TP53 loss (p53 null pattern or >50% strong positivity) corresponds to MDS-biTP53 — poor prognosis; distinct WHO 2022 category."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "SF3B1 mutation",
+        "notes": "~25% of MDS. Defines MDS-SF3B1 (ring sideroblasts ≥15% or ≥5% with SF3B1 mutation). Better prognosis. Luspatercept responsive."
+      },
+      {
+        "alteration": "TP53 biallelic loss",
+        "notes": "~5–10% of MDS. MDS-biTP53: very poor prognosis; hypomethylating agents have limited efficacy. p53 IHC ≥50% strong nuclear staining = surrogate for biallelic loss."
+      },
+      {
+        "alteration": "TET2 / DNMT3A / ASXL1 mutations",
+        "notes": "Common in MDS (and clonal haematopoiesis of indeterminate potential — CHIP). Not disease-defining alone; interpreted in clinical/morphological context."
+      }
+    ]
+  },
+  {
+    "id": "myeloid-aml",
+    "name": "AML with Defining Genetic Abnormalities",
+    "category": "Lymphoma",
+    "markers": [
+      {
+        "marker": "CD34",
+        "role": "variable",
+        "sensitivity": "~60%",
+        "specificity": "—",
+        "notes": "Positive in most AML subtypes. CD34 negative in APL (separate entry), AML with monocytic differentiation, and some AML with CEBPA mutation. Blast enumeration in marrow trephine."
+      },
+      {
+        "marker": "MPO",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "high",
+        "notes": "Myeloperoxidase confirms myeloid lineage. ≥3% MPO+ blasts = myeloid lineage by ICC criteria. Cytochemical MPO is equivalent."
+      },
+      {
+        "marker": "CD117 (c-KIT)",
+        "role": "positive",
+        "sensitivity": "~85%",
+        "specificity": "—",
+        "notes": "Pan-myeloid progenitor marker. Positive in most AML."
+      },
+      {
+        "marker": "CD33",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Pan-myeloid; target for gemtuzumab ozogamicin (anti-CD33 ADC) in CD33+ AML."
+      },
+      {
+        "marker": "CD13",
+        "role": "positive",
+        "sensitivity": "~85%",
+        "specificity": "—",
+        "notes": "Myeloid marker."
+      },
+      {
+        "marker": "CD14 / CD64",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Monocytic markers — positive in AML-M4/M5 (monocytic differentiation). CD64 is the most sensitive monocytic marker."
+      },
+      {
+        "marker": "NPM1 (cytoplasmic aberrant)",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "high",
+        "notes": "Cytoplasmic NPM1 IHC (normally nuclear) detects NPM1 mutation (~30% of AML) — most common AML mutation. NPM1 mutant AML: usually CD34−, favourable prognosis when FLT3-ITD low/absent."
+      },
+      {
+        "marker": "TdT",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative in most AML — positive TdT raises concern for mixed phenotype acute leukaemia (MPAL) or blast crisis of CML."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "NPM1 mutation",
+        "notes": "~30% of AML. Favourable prognosis (without FLT3-ITD). NPM1 mutations drive aberrant cytoplasmic localisation detectable by IHC. Venetoclax + azacitidine highly active."
+      },
+      {
+        "alteration": "FLT3-ITD / TKD mutation",
+        "notes": "~25–30% of AML. FLT3-ITD: adverse prognosis. Midostaurin (CPX-351) added to induction; gilteritinib for relapsed/refractory FLT3+ AML."
+      },
+      {
+        "alteration": "CEBPA biallelic mutation",
+        "notes": "~7% of AML. Favourable prognosis — defines AML with CEBPA biallelic mutation (WHO 2022)."
+      },
+      {
+        "alteration": "RUNX1::RUNX1T1 t(8;21) / CBFB::MYH11 inv(16)",
+        "notes": "Core binding factor (CBF) AML. Favourable prognosis; high CR rates with standard induction. Detect by FISH or RT-PCR."
+      },
+      {
+        "alteration": "IDH1 / IDH2 mutation",
+        "notes": "~15–20% of AML. Targetable: ivosidenib (IDH1) and enasidenib (IDH2) approved for relapsed/refractory IDH-mutant AML."
+      }
+    ]
+  },
+  {
+    "id": "myeloid-cml",
+    "name": "Chronic Myeloid Leukaemia (CML) — BCR::ABL1",
+    "category": "Lymphoma",
+    "markers": [
+      {
+        "marker": "CD34",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Increased CD34+ blasts in accelerated phase (10–19%) and blast crisis (≥20%). In chronic phase, CD34+ blasts are rare (<5%). Blast lineage in blast crisis determines immunophenotype."
+      },
+      {
+        "marker": "MPO / CD33 / CD13",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Myeloid blast crisis: MPO+, CD33+, CD13+. Lymphoid blast crisis (TdT+, CD19/CD10+) occurs in ~25% — important distinction as it affects treatment (add lymphoid-directed therapy)."
+      },
+      {
+        "marker": "TdT",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Positive in lymphoid blast crisis (~25% of CML blast crisis). TdT+ blasts + BCR::ABL1 = Ph+ ALL or CML in lymphoid blast crisis — clinical context distinguishes."
+      },
+      {
+        "marker": "Basophil markers",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Peripheral blood basophilia (absolute basophil count ≥ 0.2×10⁹/L) is a characteristic feature of CML chronic phase. Not an IHC marker but a diagnostic clue."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "t(9;22)(q34;q11) BCR::ABL1 — Philadelphia chromosome",
+        "notes": "Present in >99% of CML. Detectable by karyotype, FISH, or RT-PCR. BCR::ABL1 quantitative PCR (IS%) monitors TKI response and defines deep molecular response (MR4, MR4.5)."
+      },
+      {
+        "alteration": "ABL1 kinase domain mutations (T315I, etc.)",
+        "notes": "Acquired resistance to TKIs. T315I (gatekeeper) is resistant to all first/second-generation TKIs — sensitive to ponatinib and asciminib. BCR::ABL1 domain sequencing at TKI failure is mandatory."
+      },
+      {
+        "alteration": "ASXL1 / IKZF1 / CDKN2A mutations",
+        "notes": "Additional mutations acquired in accelerated phase/blast crisis. IKZF1 deletion associates with lymphoid blast crisis and adverse prognosis."
+      }
+    ]
+  },
+  {
+    "id": "myeloid-mpn",
+    "name": "Myeloproliferative Neoplasms (PV / ET / PMF) — JAK2/CALR/MPL",
+    "category": "Lymphoma",
+    "markers": [
+      {
+        "marker": "CD34 (bone marrow trephine)",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Identifies blast percentage — disease progression to blast phase (≥20% CD34+ blasts = blast phase MPN/AML). In pre-fibrotic PMF, CD34+ blasts are rare."
+      },
+      {
+        "marker": "CD61 / CD41 (megakaryocytes)",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "CD61/CD41 staining of megakaryocytes highlights dysmorphic features: ET megakaryocytes are large with hyperlobated 'stag-horn' nuclei; PMF megakaryocytes are small/hypolobated with cloud-like nuclei. Essential for diagnosis and subtype classification."
+      },
+      {
+        "marker": "Reticulin stain (MF grading)",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Not IHC but essential: reticulin fibrosis graded MF-0 to MF-3. MF-1 = early/prefibrotic PMF; MF-2/3 = overt fibrotic PMF. Distinguishes prefibrotic PMF (MF-0/1) from ET (MF-0)."
+      },
+      {
+        "marker": "Tryptase",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Mast cell marker. Increased mast cells in PMF — particularly in fibrotic phase. Tryptase highlights mast cell aggregates distinct from CD34+ blasts."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "JAK2 V617F mutation",
+        "notes": "PV: ~99%; ET: ~55%; PMF: ~65%. The founding mutation — drives constitutive JAK-STAT signalling. Ruxolitinib (JAK1/2 inhibitor) approved for PV and intermediate/high-risk PMF."
+      },
+      {
+        "alteration": "CALR exon 9 insertion/deletion",
+        "notes": "ET: ~25%; PMF: ~25%. In JAK2-wildtype MPN. Type 1 CALR (52bp del) more common in PMF and associated with lower thrombosis risk; Type 2 CALR (5bp ins) more common in ET."
+      },
+      {
+        "alteration": "MPL W515L/K mutation",
+        "notes": "ET: ~5%; PMF: ~8%. TPO receptor mutation — activates JAK-STAT. In triple-negative (JAK2/CALR/MPL-wildtype) MPN, exclude reactive conditions and consider NGS."
+      },
+      {
+        "alteration": "JAK2 exon 12 mutation",
+        "notes": "PV-specific — present in JAK2 V617F-negative PV (~3%). Drives erythrocytosis only (unlike V617F which also causes thrombocytosis)."
+      }
+    ]
+  },
+
+  // ── Intestinal T-Cell Lymphomas ────────────────────────────────────────────
+  {
+    "id": "lymphoma-eatl",
+    "name": "Enteropathy-Associated T-Cell Lymphoma (EATL) / MEITL",
+    "category": "Lymphoma",
+    "markers": [
+      {
+        "marker": "CD3",
+        "role": "positive",
+        "sensitivity": "~99%",
+        "specificity": "—",
+        "notes": "Positive cytoplasmic CD3 in both EATL and MEITL. T-lineage confirmed."
+      },
+      {
+        "marker": "CD7",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Positive in both types — uncommon loss in intestinal T-cell lymphomas."
+      },
+      {
+        "marker": "CD8",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "EATL: usually CD4−/CD8−. MEITL: usually CD8+ (strong, uniform). CD8 expression helps distinguish the two types."
+      },
+      {
+        "marker": "CD4",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative in both EATL and MEITL."
+      },
+      {
+        "marker": "CD56",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "MEITL: CD56 strongly positive (~80%) — key differentiating feature from EATL (CD56 usually negative/weak). CD56 positivity in an intestinal T-cell lymphoma favours MEITL."
+      },
+      {
+        "marker": "TCRβ / TCRγδ",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "EATL: αβ T-cell lineage (TCRβF1+). MEITL: γδ T-cell lineage (TCRγδ+, TCRβF1−) in ~30–50%. Use both TCRβF1 and anti-γδ TCR."
+      },
+      {
+        "marker": "CD103",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "Intraepithelial lymphocyte marker — positive in both types. Confirms mucosal/intraepithelial phenotype."
+      },
+      {
+        "marker": "CD30",
+        "role": "variable",
+        "sensitivity": "~40%",
+        "specificity": "—",
+        "notes": "Variably positive in EATL; usually negative in MEITL."
+      },
+      {
+        "marker": "MYC IHC / MATK (Hematopoietic cell kinase)",
+        "role": "positive",
+        "sensitivity": "~85%",
+        "specificity": "high",
+        "notes": "MATK (CSK homologous kinase) is strongly expressed in MEITL — a useful specific marker. MYC overexpression also common in MEITL."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "EATL: JAK1 / STAT3 mutations; 9q31.3 gains",
+        "notes": "EATL (previously type I) is associated with coeliac disease and HLA-DQ2/DQ8. JAK-STAT pathway mutations (~90%) are targetable. Aggressive — 5-year OS ~20%."
+      },
+      {
+        "alteration": "MEITL: SETD2 / TP53 / JAK-STAT mutations; 8q24 (MYC) gains",
+        "notes": "MEITL (previously type II) is not coeliac-associated. SETD2 loss (H3K36me3 loss by IHC) in ~90%. Extremely aggressive — 5-year OS <5%."
+      }
+    ]
+  },
+
+  // ── Testicular Sex Cord-Stromal ───────────────────────────────────────────
+  {
+    "id": "testis-leydig-sertoli",
+    "name": "Leydig Cell Tumour / Sertoli Cell Tumour",
+    "category": "Germ Cell",
+    "markers": [
+      {
+        "marker": "Inhibin-α",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "high",
+        "notes": "The most sensitive and specific marker for sex cord-stromal tumours. Strongly positive in Leydig and Sertoli cell tumours. Negative in germ cell tumours and carcinomas — key panel anchor."
+      },
+      {
+        "marker": "Calretinin",
+        "role": "positive",
+        "sensitivity": "~85%",
+        "specificity": "—",
+        "notes": "Positive in Leydig and Sertoli cell tumours. Use with Inhibin."
+      },
+      {
+        "marker": "SF-1 (NR5A1)",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "high",
+        "notes": "Steroidogenic factor 1 — nuclear transcription factor in sex cord-stromal tumours. More sensitive than inhibin in some series. Strong nuclear staining."
+      },
+      {
+        "marker": "MART-1 / Melan-A",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Positive in steroidogenic (Leydig) cells — reflects steroidogenic pathway. Important caveat: also positive in melanoma and adrenocortical tumours. Interpret with inhibin and SF-1."
+      },
+      {
+        "marker": "CD56",
+        "role": "positive",
+        "sensitivity": "~70%",
+        "specificity": "—",
+        "notes": "Variably positive."
+      },
+      {
+        "marker": "SALL4",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "high",
+        "notes": "Negative — essential to exclude germ cell tumour (SALL4 is strongly positive in nearly all GCTs)."
+      },
+      {
+        "marker": "OCT3/4",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — excludes seminoma and embryonal carcinoma."
+      },
+      {
+        "marker": "AE1/AE3 (keratins)",
+        "role": "variable",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "Sertoli cell tumours may be focally keratin-positive (especially large cell calcifying Sertoli cell tumour). Leydig cell tumours are usually keratin-negative."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "CTNNB1 (β-catenin) mutation — Sertoli cell tumour",
+        "notes": "Nuclear β-catenin in ~30% of Sertoli cell tumours. Large cell calcifying Sertoli cell tumour is associated with Peutz-Jeghers (STK11) and Carney complex (PRKAR1A)."
+      },
+      {
+        "alteration": "DICER1 mutation",
+        "notes": "Sertoli-Leydig cell tumours of the ovary (Sertoli-Leydig) — >60% have DICER1 somatic mutations; ~10% germline (DICER1 syndrome). Less data for pure testicular Sertoli cell tumours."
+      }
+    ]
+  },
+
+  // ── Paediatric / Retinal ─────────────────────────────────────────────────
+  {
+    "id": "retinoblastoma",
+    "name": "Retinoblastoma",
+    "category": "Pediatric",
+    "markers": [
+      {
+        "marker": "Synaptophysin",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Positive — reflects neuronal/photoreceptor differentiation. Consistent neuroendocrine marker."
+      },
+      {
+        "marker": "NSE (Neuron-specific enolase)",
+        "role": "positive",
+        "sensitivity": "~85%",
+        "specificity": "—",
+        "notes": "Positive; confirms neuronal lineage."
+      },
+      {
+        "marker": "Vimentin",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "Positive in basophilic tumour cells."
+      },
+      {
+        "marker": "Rb protein (RB1)",
+        "role": "loss",
+        "sensitivity": "~95%",
+        "specificity": "high",
+        "notes": "Loss of Rb nuclear expression — pathognomonic. Absent nuclear Rb staining in tumour cells (with positive internal controls in stromal cells) confirms RB1 biallelic inactivation. Required for definitive molecular diagnosis on enucleation specimen."
+      },
+      {
+        "marker": "p53",
+        "role": "variable",
+        "sensitivity": "~30%",
+        "specificity": "—",
+        "notes": "Variable — p53 mutations can occur as secondary alterations in treatment-resistant disease."
+      },
+      {
+        "marker": "Rosette architecture (H&E) / Photoreceptor markers",
+        "role": "screen",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Flexner-Wintersteiner rosettes (photoreceptor differentiation) and Homer-Wright rosettes (neuroblastic differentiation) are histomorphologic features. Cone arrestin and recoverin IHC highlight photoreceptor differentiation."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "RB1 biallelic inactivation",
+        "notes": "~95% of retinoblastoma. Heritable (germline, ~40%) or somatic (non-heritable, ~60%). Germline RB1 mutation: risk of bilateral/multifocal Rb, osteosarcoma, and other malignancies. Germline testing is mandatory."
+      },
+      {
+        "alteration": "MYCN amplification (RB1-wildtype Rb)",
+        "notes": "~2% of retinoblastoma — MYCN amplification in absence of RB1 mutation. Characteristically unilateral, non-heritable, diffuse infiltrating pattern. Highly aggressive."
+      }
+    ]
+  },
+  {
+    "id": "germ-cell-immature-teratoma",
+    "name": "Immature Teratoma (Ovarian / Testicular)",
+    "category": "Germ Cell",
+    "markers": [
+      {
+        "marker": "SALL4",
+        "role": "positive",
+        "sensitivity": "~85%",
+        "specificity": "—",
+        "notes": "Positive in primitive immature neuroepithelial component — confirms GCT lineage. Less consistently positive than in other GCTs."
+      },
+      {
+        "marker": "SOX2",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Strongly positive in immature neuroectodermal (neural tube-like) tubules — the key component used for grading. Sox2 highlights immature neural tissue within the teratoma."
+      },
+      {
+        "marker": "GFAP",
+        "role": "positive",
+        "sensitivity": "~85%",
+        "specificity": "—",
+        "notes": "Positive in glial/astrocytic differentiation within immature neural areas."
+      },
+      {
+        "marker": "Synaptophysin / NSE",
+        "role": "positive",
+        "sensitivity": "~75%",
+        "specificity": "—",
+        "notes": "Neuronal markers in immature neural component."
+      },
+      {
+        "marker": "OCT3/4",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative in mature and immature teratoma elements. OCT3/4 positivity would indicate a concurrent germ cell tumour component (seminoma, embryonal carcinoma)."
+      },
+      {
+        "marker": "AFP",
+        "role": "variable",
+        "sensitivity": "~30%",
+        "specificity": "—",
+        "notes": "Focal AFP in yolk sac-like elements (Schiller-Duval bodies) if present. Significant serum AFP elevation raises concern for admixed yolk sac tumour component."
+      },
+      {
+        "marker": "CK7 / CK5/6 / Thyroglobulin",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Site-specific markers positive in mature somatic elements (squamous: CK5/6; glandular: CK7; thyroid tissue: thyroglobulin). Used to characterise components, not for diagnosis per se."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "Isochromosome 12p [i(12p)]",
+        "notes": "Present in gonadal (testicular) immature teratoma — same as other testicular GCTs. Absent in ovarian immature teratoma (ovarian GCTs lack i(12p)). Can distinguish gonadal vs extragonadal/ovarian origin."
+      },
+      {
+        "alteration": "Grading (fraction of immature neural tissue)",
+        "notes": "Graded 1–3 by proportion of immature neuroepithelium per low-power field. Grade 3 (>3 low-power fields) associated with higher recurrence risk. SOX2 IHC quantifies immature neural component more objectively than H&E alone."
+      }
+    ]
   }
 ]
