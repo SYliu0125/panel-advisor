@@ -157,7 +157,7 @@ export default function App() {
       </main>
 
       <footer style={{ padding: '16px 24px', textAlign: 'center', fontSize: 12, color: 'var(--text3)', borderTop: '1px solid var(--border)' }}>
-        275 diagnoses · 22 categories · IHC markers + molecular alterations
+        283 diagnoses · 22 categories · IHC markers + molecular alterations
       </footer>
 
       {showChangelog && <ChangelogPanel onClose={() => setShowChangelog(false)} />}

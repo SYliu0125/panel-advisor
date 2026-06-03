@@ -16139,5 +16139,566 @@ export const DIAGNOSES = [
         "notes": "Germline RB1 carriers at high risk of pineoblastoma (trilateral retinoblastoma). Surveillance MRI recommended in all bilateral retinoblastoma patients."
       }
     ]
+  },
+  {
+    "id": "gastric-hepatoid-adenocarcinoma",
+    "name": "Gastric Hepatoid Adenocarcinoma",
+    "category": "Gastrointestinal",
+    "markers": [
+      {
+        "marker": "HepPar-1",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "moderate",
+        "notes": "Hepatocyte paraffin antigen — key positive marker. Not entirely specific; expression reflects hepatoid differentiation."
+      },
+      {
+        "marker": "AFP",
+        "role": "positive",
+        "sensitivity": "~70%",
+        "specificity": "high",
+        "notes": "AFP positivity by IHC; correlates with elevated serum AFP. High serum AFP is a diagnostic clue."
+      },
+      {
+        "marker": "Glypican-3 (GPC3)",
+        "role": "positive",
+        "sensitivity": "~75%",
+        "specificity": "moderate",
+        "notes": "Positive in hepatoid and AFP-producing gastric carcinomas. Shared with HCC and YST."
+      },
+      {
+        "marker": "SALL4",
+        "role": "positive",
+        "sensitivity": "~60%",
+        "specificity": "low",
+        "notes": "Often positive in AFP-producing tumours of gastric origin and germ cell tumours. Not specific."
+      },
+      {
+        "marker": "CK8/18",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Positive — supports carcinoma (vs HCC, which can show similar pattern)."
+      },
+      {
+        "marker": "CK7",
+        "role": "variable",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "Variable. CK7+/CK20− pattern common. Helps distinguish from colorectal primary."
+      },
+      {
+        "marker": "CDX2",
+        "role": "variable",
+        "sensitivity": "~40%",
+        "specificity": "—",
+        "notes": "May be focally positive — intestinal phenotype element common in gastric hepatoid carcinoma."
+      },
+      {
+        "marker": "PD-L1 (CPS)",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Variable. EBV-associated cases (overlap category) show very high PD-L1; hepatoid cases less consistent."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "TP53 mutation",
+        "notes": "Most common molecular alteration (~70%). Aggressive biology — lymphovascular invasion and liver metastasis at presentation common."
+      },
+      {
+        "alteration": "HER2 amplification",
+        "notes": "Present in a subset (~15–20%). HER2 testing warranted for therapeutic considerations."
+      }
+    ]
+  },
+  {
+    "id": "ebv-associated-gastric-carcinoma",
+    "name": "EBV-Associated Gastric Carcinoma",
+    "category": "Gastrointestinal",
+    "markers": [
+      {
+        "marker": "EBER (EBV-encoded RNA ISH)",
+        "role": "positive",
+        "sensitivity": "~100%",
+        "specificity": "high",
+        "notes": "Required for diagnosis — EBER ISH is the gold standard. Present in virtually all tumour cells (clonal infection). IHC alone (LMP1) is insufficient; EBER ISH must be used."
+      },
+      {
+        "marker": "PD-L1 (CPS)",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Very high PD-L1 expression (CPS often >10). EBV-associated GC is one of the highest PD-L1-expressing carcinoma subtypes — strong immunotherapy candidate."
+      },
+      {
+        "marker": "CD8 (TILs)",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Dense CD8+ tumour-infiltrating lymphocytes characteristic — reflects strong immune microenvironment (EBV antigen-driven). Low-power 'lymphoepithelioma-like' pattern."
+      },
+      {
+        "marker": "MLH1 / PMS2",
+        "role": "retained",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "MMR-proficient (unlike MSI-H group). EBV-associated GC shows PIK3CA promoter hypermethylation, not MMR methylation — these are distinct molecular subtypes per TCGA."
+      },
+      {
+        "marker": "CK7",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "CK7+/CK20− typical gastric pattern."
+      },
+      {
+        "marker": "p53",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Usually wild-type pattern (not aberrant) — TP53 mutation rare in EBV subtype. Helps distinguish from TP53-mutant GC."
+      },
+      {
+        "marker": "HER2",
+        "role": "negative",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "HER2 amplification extremely rare in EBV-associated GC — not a HER2-targeted therapy candidate."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "EBV infection (clonal, monomorphic EBER+)",
+        "notes": "Defines the EBV subtype per TCGA gastric cancer classification. ~9% of all gastric carcinomas globally. Predilection for gastric fundus/body and remnant stomach post-gastrectomy."
+      },
+      {
+        "alteration": "PIK3CA mutation (~80%)",
+        "notes": "Most common somatic mutation in EBV-GC. PI3K pathway activation — potential therapeutic target. Unlike other GC subtypes."
+      },
+      {
+        "alteration": "CDKN2A (p16) silencing by methylation",
+        "notes": "Epigenetic silencing frequent. Part of the CpG island methylator phenotype (CIMP) characteristic of EBV-GC."
+      }
+    ]
+  },
+  {
+    "id": "medullary-adenocarcinoma-colorectum",
+    "name": "Medullary Adenocarcinoma of the Colorectum",
+    "category": "Gastrointestinal",
+    "markers": [
+      {
+        "marker": "MLH1 / PMS2",
+        "role": "loss",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Near-universal MLH1/PMS2 loss — sporadic methylation of MLH1 promoter is the predominant mechanism. BRAF V600E co-occurs in most sporadic cases. MSI-H is essentially required for the diagnosis."
+      },
+      {
+        "marker": "MSH2 / MSH6",
+        "role": "retained",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "MSH2/MSH6 retained in most medullary carcinoma (sporadic MLH1 methylation pattern). MSH2/6 loss would suggest Lynch syndrome."
+      },
+      {
+        "marker": "CD8 (TILs)",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Brisk CD8+ TIL infiltration — characteristic histologic feature. Reflects MSI-H immune microenvironment."
+      },
+      {
+        "marker": "Synaptophysin / Chromogranin",
+        "role": "negative",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Negative — important to distinguish medullary carcinoma from poorly differentiated NEC. Neuroendocrine markers should be performed to exclude NEC."
+      },
+      {
+        "marker": "CDX2",
+        "role": "variable",
+        "sensitivity": "~60%",
+        "specificity": "—",
+        "notes": "Variable / often reduced or lost — in contrast to conventional CRC. Reduced CDX2 is a feature of MSI-H/medullary CRC."
+      },
+      {
+        "marker": "CK20",
+        "role": "variable",
+        "sensitivity": "~50%",
+        "specificity": "—",
+        "notes": "Often reduced or negative — atypical for conventional CRC. CK20−/CDX2− profile in poorly differentiated colorectal carcinoma should prompt MSI testing."
+      },
+      {
+        "marker": "p53",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Wild-type (heterogeneous) pattern typical — TP53 mutation uncommon in MSI-H CRC."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "MSI-H / MLH1 promoter methylation + BRAF V600E",
+        "notes": "Sporadic medullary CRC: MLH1 methylation + BRAF V600E (~70% of cases) — not Lynch syndrome. BRAF V600E excludes Lynch if MLH1/PMS2-deficient. Germline MLH1 testing only warranted if BRAF V600E absent."
+      },
+      {
+        "alteration": "KRAS / NRAS / BRAF mutation profile",
+        "notes": "MSI-H CRC with BRAF V600E: poor prognosis subgroup in metastatic disease. MSI-H without BRAF: Lynch syndrome candidate, excellent immunotherapy response."
+      }
+    ]
+  },
+  {
+    "id": "serrated-adenocarcinoma-colorectum",
+    "name": "Serrated Adenocarcinoma of the Colorectum",
+    "category": "Gastrointestinal",
+    "markers": [
+      {
+        "marker": "BRAF V600E (VE1 clone)",
+        "role": "positive",
+        "sensitivity": "~70%",
+        "specificity": "moderate",
+        "notes": "VE1 IHC detects BRAF V600E protein — present in ~70% of serrated pathway CRC. Positive VE1 in a CRC with mucinous/serrated morphology is highly suggestive. Confirm with molecular BRAF testing."
+      },
+      {
+        "marker": "MLH1 / PMS2",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Variable — ~40–50% of serrated adenocarcinomas have MLH1/PMS2 loss (CIMP-high/MSI-H). ~50% remain MLH1-retained (CIMP-high/MSS). MSI status does not define this entity."
+      },
+      {
+        "marker": "CDX2",
+        "role": "variable",
+        "sensitivity": "~70%",
+        "specificity": "—",
+        "notes": "Usually positive but may be reduced — retained intestinal phenotype. Less loss than medullary CRC."
+      },
+      {
+        "marker": "CK20",
+        "role": "positive",
+        "sensitivity": "~75%",
+        "specificity": "—",
+        "notes": "Usually positive — CK20+/CDX2+ typical. Conventional CRC-like IHC profile."
+      },
+      {
+        "marker": "MUC2",
+        "role": "positive",
+        "sensitivity": "~70%",
+        "specificity": "—",
+        "notes": "MUC2+ goblet cell differentiation common — reflects serrated/mucinous differentiation."
+      },
+      {
+        "marker": "MUC5AC",
+        "role": "positive",
+        "sensitivity": "~60%",
+        "specificity": "—",
+        "notes": "MUC5AC (gastric mucin) expression — aberrant gastric differentiation marker of the serrated pathway. Less typical for conventional CRC."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "BRAF V600E mutation (~70%)",
+        "notes": "Hallmark of the serrated pathway (sessile serrated lesion → serrated adenocarcinoma). KRAS mutation present in a minority (traditional serrated adenoma pathway). BRAF V600E and KRAS are essentially mutually exclusive."
+      },
+      {
+        "alteration": "CIMP-high (CpG island methylator phenotype)",
+        "notes": "Epigenetic hallmark. CIMP-high BRAF-mutant MSS CRC: poor prognosis. CIMP-high BRAF-mutant MSI-H CRC: better prognosis (immunotherapy-responsive). Subtype determines outcome."
+      }
+    ]
+  },
+  {
+    "id": "hepatocellular-adenoma",
+    "name": "Hepatocellular Adenoma (HCA) — WHO Subtypes",
+    "category": "Gastrointestinal",
+    "markers": [
+      {
+        "marker": "LFABP (Liver Fatty Acid Binding Protein)",
+        "role": "loss",
+        "sensitivity": "~100%",
+        "specificity": "high",
+        "notes": "LFABP loss defines HNF1A-inactivated HCA (~40% of HCA). Loss is specific — retained in all other subtypes. The most diagnostically decisive IHC marker in HCA subtyping."
+      },
+      {
+        "marker": "β-catenin (nuclear)",
+        "role": "variable",
+        "sensitivity": "~100% in activated subtype",
+        "specificity": "high",
+        "notes": "Nuclear β-catenin defines β-catenin-activated HCA (~10–15%). Heterogeneous nuclear staining (not uniform like HCC). Exon 3 mutations most common; exon 7/8 mutations = lower risk. Nuclear β-catenin = malignant transformation risk."
+      },
+      {
+        "marker": "Glutamine Synthetase (GS)",
+        "role": "variable",
+        "sensitivity": "~85% in β-catenin-activated",
+        "specificity": "moderate",
+        "notes": "Diffuse/strong GS staining (map-like) in β-catenin-activated HCA and HCC. Perizonal GS in normal liver. Map-like diffuse positivity = β-catenin activation surrogate."
+      },
+      {
+        "marker": "Serum Amyloid A (SAA)",
+        "role": "variable",
+        "sensitivity": "~100% in inflammatory subtype",
+        "specificity": "high",
+        "notes": "SAA positivity defines inflammatory HCA (~40–50%). Usually diffuse cytoplasmic staining. Co-express SAA+CRP. Inflammatory HCA associated with obesity, alcohol, IL6ST (gp130) mutations."
+      },
+      {
+        "marker": "CRP (C-Reactive Protein)",
+        "role": "variable",
+        "sensitivity": "~100% in inflammatory subtype",
+        "specificity": "high",
+        "notes": "CRP IHC co-positivity with SAA confirms inflammatory HCA. SAA+CRP+ panel is diagnostic for this subtype."
+      },
+      {
+        "marker": "HepPar-1",
+        "role": "positive",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "Diffusely positive in all HCA subtypes — confirms hepatocellular origin. Does not distinguish HCA from HCC."
+      },
+      {
+        "marker": "Glypican-3 (GPC3)",
+        "role": "negative",
+        "sensitivity": "~95% negative",
+        "specificity": "moderate",
+        "notes": "Negative in benign HCA — key distinction from HCC (GPC3+). Focal GPC3 positivity in HCA raises concern for malignant transformation."
+      },
+      {
+        "marker": "CD34",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Variable sinusoidal CD34 staining in HCA (diffuse sinusoidal staining favours HCC). Pattern of CD34 helps assess malignant transformation."
+      },
+      {
+        "marker": "Reticulin",
+        "role": "retained",
+        "sensitivity": "~85%",
+        "specificity": "moderate",
+        "notes": "Reticulin framework intact/normal in HCA. Loss or trabecular thickening (>3 cells) favours HCC. Critical ancillary stain on needle biopsies."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "HNF1A inactivation (biallelic) — HNF1A-inactivated subtype",
+        "notes": "Somatic biallelic HNF1A mutations define ~40% of HCA. Associated with LFABP loss by IHC. Low risk of malignant transformation. Associated with MODY3 (germline HNF1A = familial HCA)."
+      },
+      {
+        "alteration": "CTNNB1 (β-catenin) exon 3 mutation — β-catenin-activated subtype",
+        "notes": "Exon 3 mutations (~10–15% of HCA) = high malignant transformation risk → resection recommended. Exon 7/8 mutations = lower risk. Nuclear β-catenin IHC + GS map-like pattern is diagnostic surrogate."
+      },
+      {
+        "alteration": "IL6ST (gp130) mutation — inflammatory subtype",
+        "notes": "Most common mutation in inflammatory HCA (~60%). Also JAK1/STAT3 pathway activation. SAA+CRP+ by IHC is the diagnostic approach (molecular testing not routinely required)."
+      }
+    ]
+  },
+  {
+    "id": "ptld-post-transplant-lymphoproliferative-disorder",
+    "name": "Post-Transplant Lymphoproliferative Disorder (PTLD)",
+    "category": "Lymphoma",
+    "markers": [
+      {
+        "marker": "EBER (EBV-encoded RNA ISH)",
+        "role": "variable",
+        "sensitivity": "~70% in early/polymorphic PTLD",
+        "specificity": "high",
+        "notes": "EBV-positive PTLD (~70% of cases, especially early and polymorphic types) driven by immunosuppression-related EBV reactivation. EBV-negative PTLD (~30%) occurs later post-transplant, de novo mutations. EBER ISH required — LMP1 alone insufficient."
+      },
+      {
+        "marker": "CD20",
+        "role": "positive",
+        "sensitivity": "~85%",
+        "specificity": "—",
+        "notes": "Positive in the majority (B-cell PTLD). B-cell PTLD includes early lesions, polymorphic PTLD, monomorphic PTLD (DLBCL-type, Burkitt-type). T-cell PTLD (CD20−) is uncommon (~10–15%)."
+      },
+      {
+        "marker": "CD3",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Positive in T/NK-cell PTLD (~10–15% of cases). T-cell PTLD tends to be EBV-negative and later post-transplant. CD3+ PTLD has worse prognosis than B-cell PTLD."
+      },
+      {
+        "marker": "CD138 / MUM1",
+        "role": "variable",
+        "sensitivity": "~30%",
+        "specificity": "—",
+        "notes": "Plasma cell differentiation seen in some plasmacytic subtypes of PTLD. CD138+ PTLD may overlap morphologically with plasmablastic lymphoma."
+      },
+      {
+        "marker": "Ki-67",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Highly variable across the PTLD spectrum: low in early lesions (plasmacytic hyperplasia), intermediate in polymorphic PTLD, high in monomorphic PTLD."
+      },
+      {
+        "marker": "BCL2",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Variable. BCL2/BCL6/MYC rearrangements can occur in monomorphic PTLD (DLBCL-type) — FISH warranted in high-grade cases."
+      },
+      {
+        "marker": "PD-L1 (CPS)",
+        "role": "variable",
+        "sensitivity": "~60% EBV+ cases",
+        "specificity": "—",
+        "notes": "PD-L1 often high in EBV-associated PTLD — potential immunotherapy target (with caution given transplant immunosuppression context)."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "EBV clonal infection (majority of cases)",
+        "notes": "EBV-driven PTLD occurs via loss of T-cell immune surveillance under immunosuppression. Risk highest in EBV-seronegative recipients receiving EBV+ organ. Reduction of immunosuppression (RIS) is first-line treatment for most PTLD."
+      },
+      {
+        "alteration": "IG gene rearrangement (monoclonal in monomorphic/most polymorphic PTLD)",
+        "notes": "Clonality by PCR/NGS distinguishes monomorphic PTLD from reactive polymorphic lesions. Polyclonal early lesions may regress with RIS alone."
+      }
+    ]
+  },
+  {
+    "id": "indolent-tcell-lymphoproliferative-gi",
+    "name": "Indolent T-Cell Lymphoproliferative Disorder of the GI Tract",
+    "category": "Lymphoma",
+    "markers": [
+      {
+        "marker": "CD3",
+        "role": "positive",
+        "sensitivity": "~100%",
+        "specificity": "—",
+        "notes": "Positive — T-cell lineage. Small lymphocytes with mature T-cell phenotype infiltrating mucosal lamina propria. Cytologically bland despite clonal expansion."
+      },
+      {
+        "marker": "CD8",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "CD8+ (cytotoxic T-cell) in most cases. CD4+ cases also described. CD8+ phenotype associated with better-characterised indolent behaviour."
+      },
+      {
+        "marker": "CD4",
+        "role": "variable",
+        "sensitivity": "~20%",
+        "specificity": "—",
+        "notes": "CD4+ cases occur. CD4+ indolent T-LPD may overlap with indolent peripheral T-cell lymphoma. CD4/CD8 phenotype should be fully characterised."
+      },
+      {
+        "marker": "CD56",
+        "role": "negative",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "CD56 negative — distinguishes from NK/T-cell lymphoma (CD56+/EBER+) and MEITL (CD56+). Absence of CD56 is critical."
+      },
+      {
+        "marker": "EBER",
+        "role": "negative",
+        "sensitivity": "~95%",
+        "specificity": "—",
+        "notes": "EBV-negative (EBER ISH negative) — distinguishes from NK/T-cell lymphoma and EBV+ T-cell LPD."
+      },
+      {
+        "marker": "βF1 (TCRβ)",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "Most cases are αβ T-cell lineage (βF1+). Rare γδ cases described."
+      },
+      {
+        "marker": "Ki-67",
+        "role": "positive",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "Low Ki-67 (typically <10%) despite clonality — reflects indolent biology. This is the most important histologic clue to the diagnosis."
+      },
+      {
+        "marker": "Granzyme B / Perforin",
+        "role": "negative",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "Cytotoxic markers typically negative or weak — distinguishes from aggressive CTL lymphomas (EATL, MEITL, αβ HSTL) which show strong cytotoxic marker expression."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "TCR clonal rearrangement (clonal by PCR/NGS)",
+        "notes": "Demonstrates clonality despite cytologically bland appearance and indolent clinical course. Clonality alone does not imply aggressive lymphoma — must be interpreted with morphology, IHC, and clinical context."
+      },
+      {
+        "alteration": "STAT3 mutations (subset)",
+        "notes": "STAT3 activating mutations found in a subset, particularly CD8+ cases. Shared molecular pathway with other indolent T-cell LPDs. No JAK2 rearrangements or ALK alterations."
+      }
+    ]
+  },
+  {
+    "id": "undifferentiated-carcinoma-osteoclast-pancreas",
+    "name": "Undifferentiated Carcinoma with Osteoclast-like Giant Cells (Pancreas)",
+    "category": "Gastrointestinal",
+    "markers": [
+      {
+        "marker": "CD68",
+        "role": "positive",
+        "sensitivity": "~100%",
+        "specificity": "—",
+        "notes": "CD68+ osteoclast-like giant cells (OGC) — these are reactive non-neoplastic histiocytes, not the tumour cells. Strongly positive. Do not use CD68 to assess the carcinoma component."
+      },
+      {
+        "marker": "Pancytokeratin (AE1/AE3, CAM5.2)",
+        "role": "positive",
+        "sensitivity": "~90%",
+        "specificity": "—",
+        "notes": "Positive in mononuclear carcinoma cells (the true neoplastic component). OGC are keratin-negative. This distinction is diagnostically critical: keratin+ mononuclear cells = neoplastic; CD68+ multinucleated cells = reactive."
+      },
+      {
+        "marker": "Vimentin",
+        "role": "positive",
+        "sensitivity": "~80%",
+        "specificity": "—",
+        "notes": "Mononuclear tumour cells often co-express vimentin — sarcomatoid/undifferentiated phenotype. Vimentin+/keratin+ co-expression supports undifferentiated carcinoma."
+      },
+      {
+        "marker": "p53",
+        "role": "variable",
+        "sensitivity": "~60%",
+        "specificity": "—",
+        "notes": "Aberrant p53 (overexpression or null) in carcinoma cells — shared with conventional PDAC and undifferentiated carcinoma."
+      },
+      {
+        "marker": "SMAD4 (DPC4)",
+        "role": "loss",
+        "sensitivity": "~55%",
+        "specificity": "—",
+        "notes": "SMAD4 loss in ~55% — shared with PDAC. SMAD4 loss confirms pancreatic origin and carcinoma component."
+      },
+      {
+        "marker": "MLH1 / PMS2 / MSH2 / MSH6",
+        "role": "variable",
+        "sensitivity": "—",
+        "specificity": "—",
+        "notes": "MMR status variable — a subset shows MSI-H/MMR deficiency (~20%), significantly higher than conventional PDAC (~1%). Full MMR IHC panel recommended: MSI-H cases are immunotherapy candidates."
+      },
+      {
+        "marker": "RANKL",
+        "role": "positive",
+        "sensitivity": "~70%",
+        "specificity": "—",
+        "notes": "RANKL expression in carcinoma cells drives OGC recruitment (osteoclast differentiation via RANK/RANKL). Explains the histiocytic giant cell response — a paracrine tumour-stroma interaction."
+      }
+    ],
+    "molecular": [
+      {
+        "alteration": "KRAS mutation (~70%)",
+        "notes": "KRAS G12D/G12V most common — shared with PDAC. Supports origin from pancreatic ductal epithelium with subsequent dedifferentiation."
+      },
+      {
+        "alteration": "MSI-H / MMR deficiency (~20%)",
+        "notes": "Significantly enriched compared to conventional PDAC. MMR-deficient UCOGC qualifies for pembrolizumab. Full MMR panel should be performed in all cases."
+      },
+      {
+        "alteration": "CDKN2A, TP53, SMAD4 alterations",
+        "notes": "Standard PDAC molecular landscape. Some cases lack KRAS mutation (KRAS-WT undifferentiated carcinoma — consider alternative drivers: BRAF, NRG1 fusions)."
+      }
+    ]
   }
 ]
